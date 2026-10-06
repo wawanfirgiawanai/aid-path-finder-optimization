@@ -188,8 +188,9 @@ def _random_walk_path(graph, source, target, max_steps=800):
 
 
 def _generate_random_population(graph, source, target, pop_size):
-    """Generate population using ONLY random walks — no Dijkstra seeding."""
+    """Generate population using random walks; returns (paths, used_kshortest_fallback)."""
     paths = []
+    used_fallback = False
     attempts = 0
     max_attempts = pop_size * 5
     while len(paths) < pop_size and attempts < max_attempts:
@@ -199,16 +200,17 @@ def _generate_random_population(graph, source, target, pop_size):
         attempts += 1
     # Fallback: if random walks fail, use k-shortest as last resort
     if len(paths) < 2:
+        used_fallback = True
         for kp in _k_shortest_paths(graph, source, target, k=pop_size):
             if kp not in paths:
                 paths.append(kp)
             if len(paths) >= pop_size:
                 break
     if not paths:
-        return []
+        return [], used_fallback
     while len(paths) < pop_size:
         paths.append(list(random.choice(paths)))
-    return paths[:pop_size]
+    return paths[:pop_size], used_fallback
 
 
 def _tournament_select(population, fitness, k):
@@ -228,9 +230,9 @@ def genetic_algorithm(graph, source, target, params=None):
     tournament_k = p.get('ga_tournament_k', 3)
     elitism_count = p.get('ga_elitism', 2)
 
-    population = _generate_random_population(graph, source, target, pop_size)
+    population, fb = _generate_random_population(graph, source, target, pop_size)
     if not population:
-        return None, 0, {"generations": 0}
+        return None, 0, {"generations": 0, "fallback": fb}
 
     explored = 0
 
@@ -268,7 +270,7 @@ def genetic_algorithm(graph, source, target, params=None):
 
     best = min(population, key=lambda pp: _path_cost(graph, pp))
     best_cost = _path_cost(graph, best)
-    return best, explored, {"generations": max_gen, "best_cost": round(best_cost, 2)}
+    return best, explored, {"generations": max_gen, "best_cost": round(best_cost, 2), "fallback": fb}
 
 
 # ========== GA WITH EARLY STOPPING ==========
@@ -282,9 +284,9 @@ def genetic_algorithm_es(graph, source, target, params=None):
     elitism_count = p.get('ga_elitism', 2)
     stag_limit = p.get('ga_stagnation_limit', 10)
 
-    population = _generate_random_population(graph, source, target, pop_size)
+    population, fb = _generate_random_population(graph, source, target, pop_size)
     if not population:
-        return None, 0, {"generations": 0, "stopped_early": False}
+        return None, 0, {"generations": 0, "stopped_early": False, "fallback": fb}
 
     explored = 0
     best_cost = float('inf')
@@ -329,7 +331,7 @@ def genetic_algorithm_es(graph, source, target, params=None):
     best = min(population, key=lambda pp: _path_cost(graph, pp))
     return best, explored, {
         "generations": gen_done, "stopped_early": stagnation >= stag_limit,
-        "stagnation_limit": stag_limit, "best_cost": round(_path_cost(graph, best), 2)
+        "stagnation_limit": stag_limit, "best_cost": round(_path_cost(graph, best), 2), "fallback": fb
     }
 
 
@@ -608,7 +610,7 @@ def solve_vrp(graph_service, starts, destinations, algorithm, algo_params=None, 
     dest_ids = [int(d['node_id']) for d in destinations]
     dest_labels = {int(destinations[i]['node_id']): f"E{i + 1}" for i in range(len(destinations))}
 
-    # Pre-compute shortest path costs
+    # Pre-compute shortest path costs (one single-source Dijkstra per key node, used by the greedy allocation)
     all_src_nodes = list(set([a['start'] for a in agents]))
     dist_cache = {}
     for src in all_src_nodes + dest_ids:
@@ -620,10 +622,14 @@ def solve_vrp(graph_service, starts, destinations, algorithm, algo_params=None, 
         except Exception:
             pass
 
+    t_matrix = time.perf_counter()
     if force_distribution and len(agents) > 1:
         _assign_forced(agents, dest_ids, dist_cache)
     else:
         _assign_greedy(agents, dest_ids, dist_cache)
+    t_alloc = time.perf_counter()
+    # fallback types: GA k-shortest seeding, ACO exact path, solver exact path for a missing baseline path
+    fallbacks = {"ga_kshortest": 0, "aco_shortest_path": 0, "solver_shortest_path": 0}
 
     # Build routes for each agent using the selected algorithm
     routes = []
@@ -639,7 +645,10 @@ def solve_vrp(graph_service, starts, destinations, algorithm, algo_params=None, 
             seg_result = run_single_route(graph_service, str(src), str(tgt), algorithm, algo_params)
             seg_path = [int(n) for n in seg_result.get('path_nodes', [])] if seg_result.get('path_nodes') else []
             seg_geom = seg_result.get('route_geometry', [])
+            if seg_result.get('meta', {}).get('fallback'):
+                fallbacks['ga_kshortest' if algorithm.startswith('ga') else 'aco_shortest_path'] += 1
             if not seg_path:
+                fallbacks['solver_shortest_path'] += 1
                 try:
                     seg_path = list(nx.shortest_path(graph, src, tgt, weight='cost'))
                     seg_geom = graph_service.get_route_geometry(seg_path)
@@ -662,9 +671,15 @@ def solve_vrp(graph_service, starts, destinations, algorithm, algo_params=None, 
         routes.append(build_route_entry(graph_service, ag['agent_label'], ag['start_label'], dv,
                                         full_path, full_geometry, segments))
 
-    comp_time = round((time.perf_counter() - t0) * 1000, 2)
+    t_end = time.perf_counter()
+    comp_time = round((t_end - t0) * 1000, 2)
+    used = {k: v for k, v in fallbacks.items() if v}
+    meta = {"matrix_ms": round((t_matrix - t0) * 1000, 2), "allocation_ms": round((t_alloc - t_matrix) * 1000, 2),
+            "routing_ms": round((t_end - t_alloc) * 1000, 2), "fallback_counts": fallbacks,
+            "fallback_used": bool(used), "fallback_type": '+'.join(sorted(used)) or None,
+            "fallback_count": sum(fallbacks.values())}
     return {"routes": routes, "algorithm": algorithm,
-            "summary": build_summary(routes, comp_time, len(destinations))}
+            "summary": build_summary(routes, comp_time, len(destinations)), "meta": meta}
 
 
 def build_route_entry(graph_service, agent_label, start_label, dests_visited, full_path, full_geometry, segments):
@@ -687,6 +702,7 @@ def build_summary(routes, comp_time, total_destinations):
     atc = sum(r['total_cost'] for r in routes)
     aar = sum(r['avg_risk'] for r in routes) / max(len(routes), 1) if routes else 0
     wsum = sum(r.pop('_risk_weighted_sum', 0.0) for r in routes)
+    visits = [d for r in routes for d in r['destinations_visited']]
     return {"total_distance": round(atd, 2), "total_cost": round(atc, 2),
             "avg_risk": round(aar, 3),
             "risk_exposure": round(wsum / atd, 4) if atd else 0.0,
@@ -694,7 +710,9 @@ def build_summary(routes, comp_time, total_destinations):
             "high_risk_distance": round(sum(r['high_risk_distance'] for r in routes), 2),
             "makespan_cost": round(max((r['total_cost'] for r in routes), default=0.0), 2),
             "computation_time_ms": comp_time,
-            "agents_used": len(routes), "destinations_covered": sum(len(r['destinations_visited']) for r in routes),
+            "agents_used": len(routes),
+            "destinations_covered": len(set(visits)),  # unique destinations served
+            "service_visits": len(visits),  # visits by all vehicles (MA-SD: every vehicle visits the one destination)
             "total_destinations": total_destinations}
 
 

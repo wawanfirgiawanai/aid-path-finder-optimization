@@ -339,7 +339,11 @@ def solve_hybrid(graph_service, starts, destinations, algo_params=None, force_di
                                         [dest_labels[t] for t in g], full_path,
                                         graph_service.get_route_geometry(full_path), segments))
 
-    comp_time = round((time.perf_counter() - t0) * 1000, 2)
+    t3 = time.perf_counter()
+    comp_time = round((t3 - t0) * 1000, 2)
+    meta.update({"matrix_ms": meta["level1_ms"], "allocation_ms": meta["level2_ms"],
+                 "routing_ms": round((t3 - t2) * 1000, 2),  # assembly of the stored Level-1 paths
+                 "fallback_counts": {}, "fallback_used": False, "fallback_type": None, "fallback_count": 0})
     result = {"routes": routes, "algorithm": "hybrid",
               "summary": build_summary(routes, comp_time, len(destinations)), "meta": meta}
     if return_problem:

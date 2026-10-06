@@ -102,11 +102,18 @@ def run_one(task):
            'cost': s['total_cost'], 'distance': s['total_distance'], 'risk_exposure': s['risk_exposure'],
            'max_risk': s['max_risk'], 'high_risk_distance': s['high_risk_distance'],
            'makespan_cost': s['makespan_cost'], 'time_ms': s['computation_time_ms'],
-           'agents_used': s['agents_used'], 'covered': s['destinations_covered']}
+           'agents_used': s['agents_used'], 'destinations_covered': s['destinations_covered'],
+           'service_visits': s.get('service_visits')}
     meta = r.get('meta')
     if meta:
         out.update({'generations': meta.get('generations'), 'level1_ms': meta.get('level1_ms'),
-                    'level2_ms': meta.get('level2_ms')})
+                    'level2_ms': meta.get('level2_ms'),
+                    # runtime components (baselines: Dijkstra matrix / greedy allocation / leg search + assembly,
+                    # hybrid: Level 1 / Level 2 / assembly of the stored paths)
+                    'matrix_ms': meta.get('matrix_ms'), 'allocation_ms': meta.get('allocation_ms'),
+                    'routing_ms': meta.get('routing_ms'),
+                    'fallback_used': meta.get('fallback_used'), 'fallback_type': meta.get('fallback_type'),
+                    'fallback_count': meta.get('fallback_count')})
         if task.get('keep_convergence'):
             out['convergence'] = json.dumps(meta.get('convergence', []))
     return out
@@ -239,7 +246,7 @@ def case_table(runs, opt):
     import pandas as pd
     rows = []
     for (cid, algo), d in runs.groupby(['case_id', 'algo']):
-        best = d.loc[d['cost'].idxmin()]
+        best = d.sort_values(['cost', 'seed']).iloc[0]  # minimum-cost run, ties: lowest seed
         o = opt.get(cid)
         rows.append({'case_id': cid, 'group': d['group'].iloc[0], 'n_dest': d['n_dest'].iloc[0],
                      'algo': algo, 'algorithm': NAMES[algo], 'runs': len(d),
@@ -428,6 +435,13 @@ def main():
     if a.out:
         out = Path(a.out).resolve()   # absolute: get_graph() changes the working directory
         RESULTS, FIGURES = out / 'results', out / 'figures'
+    RESULTS.mkdir(parents=True, exist_ok=True)
+    import platform
+    (RESULTS / 'run_info.json').write_text(json.dumps({
+        'jobs': a.jobs, 'worker_model': 'one single-threaded process per run (ProcessPoolExecutor)',
+        'cpu_count': os.cpu_count(), 'processor': platform.processor(), 'python': platform.python_version(),
+        'platform': platform.platform(), 'started': time.strftime('%Y-%m-%d %H:%M:%S'),
+        'phase': a.phase, 'params_file': a.params_file}, indent=2))
     if a.params_file:
         PARAMS_FILE = str(Path(a.params_file).resolve())
         print(f'[params] evaluating with parameters from {a.params_file}', flush=True)

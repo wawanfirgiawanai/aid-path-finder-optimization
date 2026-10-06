@@ -80,15 +80,19 @@ agent routes. Four metrics are reported for every run:
 
 | Algorithm | Type | Implementation |
 |---|---|---|
-| A\* | Exact | Haversine heuristic; admissible because *c_ij* ≥ *d_ij* ≥ *h* |
+| A\* | Exact | Haversine heuristic; a lower bound up to the two-decimal rounding of the stored weights (checked by `experiments/verify_heuristic.py`) |
 | BFS | Uninformed | Fewest edges; ignores edge cost |
-| GA | Metaheuristic (path level) | Chromosome = node path; tournament selection, crossover at a shared node, sub-path mutation |
-| ACO | Metaheuristic (path level) | τ^α η^β with η = 1/cost, elitist deposit, MAX–MIN bounds |
+| GA | Metaheuristic (path level) | Chromosome = node path; tournament selection, crossover at a shared node, sub-path mutation; k-shortest-path fallback when fewer than two random walks reach the target (never used) |
+| ACO | Metaheuristic (path level) | τ^α η^β with η = 1/cost, elitist deposit, pheromone clipping (floor 0.1, ceiling inversely proportional to the best cost); exact-path fallback when no ant reaches the target (used in 29.9% of the ACO legs) |
 | **Hybrid A\*–GA** | **Two-level (proposed)** | Exact A\* paths + GA on allocation and visiting order |
 
-For more than one destination, the baselines assign destinations with a greedy nearest-destination rule and route each
-leg with the chosen algorithm. Dijkstra is also implemented in the code; it returns the same paths and costs as A\* and
-is therefore not reported separately in the paper.
+Every baseline combines its path algorithm with the same greedy allocation: destinations are assigned by a greedy
+nearest-destination rule on exact path costs, and each leg is then routed by the baseline algorithm. "A\*" in the
+results is therefore the **A\*-based greedy baseline**: its paths are optimal, but its allocation and visiting order
+are not optimized. The term **verified optimum** is used only for the 15 cases whose optimum was proven by
+enumeration. If a baseline returns no path for a leg, the solver uses the exact path (this never occurred). Dijkstra
+is also implemented; it was run as a reference method (800 additional runs), returned the same costs as A\* in every
+run, and is therefore not reported separately in the paper.
 
 ### 2.3 Two-level hybrid A\*–GA
 
@@ -96,12 +100,15 @@ is therefore not reported separately in the paper.
   destinations) and stores the costs in a matrix *M*. For *m* key nodes, this requires *m*(*m* − 1)/2 searches.
 - **Level 2 (allocation and visiting order).** A chromosome is a permutation of the destinations with *K* − 1 agent
   separators. The GA uses:
-  - fitness = total route cost read from *M*, with a penalty for idle agents under forced distribution;
-  - a greedy warm start, which guarantees that the hybrid is never worse than the greedy baseline;
-  - tournament selection with elitism;
+  - fitness = total route cost read from *M*, plus a penalty Ω = 10⁹ per idle agent when mandatory dispatch is
+    active and there are at least as many destinations as agents (the makespan weight is 0 in all experiments);
+  - a greedy warm start and elitism, which guarantee that the hybrid is never worse than the greedy baseline (this
+    is not a proof of global optimality);
+  - tournament selection;
   - order crossover (OX1);
   - multi-domain inversion mutation (seven variants from four cut points);
-  - early stopping after a fixed number of generations without improvement.
+  - population 30, at most 100 generations, and a stop after 30 generations without an improvement larger
+    than 10⁻⁶.
 
 Level 2 does not access the road graph. Source code: [`backend/hybrid.py`](backend/hybrid.py); unit tests:
 [`backend/tests/test_hybrid.py`](backend/tests/test_hybrid.py).
@@ -123,16 +130,17 @@ Parameters were selected by random search over 24 configurations on tuning cases
 segments. Risk values are drawn as *r* ~ U(0, 1) with seed 42. The network is stored in
 [`dataset/network/`](dataset/network/), so the application and the experiments run **offline**.
 
-| Group | Test cases | Depots × agents | Destinations | Runs per algorithm |
-|---|---|---|---|---|
-| SA-SD | SA-SD-01 … 05 | 1 × 1 | 1 | 30 |
-| SA-MD | SA-MD-01 … 05 | 1 × 1 | 4 | 30 |
-| MA-SD | MA-SD-01 … 05 | 2 × 2 | 1 | 30 |
-| MA-MD | MA-MD-01 … 05 | 2 × 2 | 4 | 30 |
-| SC-05 / 10 / 20 / 30 | SC-xx-01 … 05 | 2 × 2 | 5 / 10 / 20 / 30 | 10 |
-| TUNE | TUNE-A … D | — | — | parameter tuning only |
+| Group | Test cases | Depots × agents per depot | Destinations | Decision actually tested | Runs per method |
+|---|---|---|---|---|---|
+| SA-SD | SA-SD-01 … 05 | 1 × 1 | 1 | Path to one destination | 30 |
+| SA-MD | SA-MD-01 … 05 | 1 × 1 | 4 | Path and visiting order | 30 |
+| MA-SD | MA-SD-01 … 05 | 2 × 2 | 1 | All vehicles go to one shared destination; the allocation GA is skipped | 30 |
+| MA-MD | MA-MD-01 … 05 | 2 × 2 | 4 | Mandatory dispatch: each of the four vehicles receives one destination, so only the allocation changes | 30 |
+| SC-05 / 10 / 20 / 30 | SC-xx-01 … 05 | 2 × 2 | 5 / 10 / 20 / 30 | Allocation and visiting order (more destinations than vehicles) | 10 |
+| TUNE | TUNE-A … D | — | — | Parameter tuning only | — |
 
 SA = single agent, MA = multiple agents, SD = single destination, MD = multiple destinations, SC = scalability.
+2 × 2 means two depots with two agents each, i.e., four vehicles.
 
 ![Test-case scenarios](docs/figures/fig1_scenarios.png)
 
@@ -307,6 +315,15 @@ differ. `verify_dataset.py` checks every seeded run against the published result
 | `experiments/make_scenario_maps.py [CASE]` | Route map of one test case |
 | `experiments/build_dataset.py` | Test cases, maps, app sessions, and checksums |
 | `experiments/verify_dataset.py` | Reproduction check against the published runs |
+| `experiments/paper_tables.py` | Tables III–V and the statistics exactly as reported in the paper (five methods) |
+| `experiments/verify_heuristic.py` | Rounding check of the stored weights and A\* vs. Dijkstra on all 9,560 key-node pairs |
+
+**Runtime.** Each run is timed as the wall-clock time of one complete solution inside a single-threaded worker
+process. The baselines build their allocation matrix with one Dijkstra search per key node and then search every leg
+again with the tested algorithm, whereas the hybrid runs one A\* search per pair of key nodes and reuses those paths.
+Runtime differences therefore also reflect these implementation choices. New runs record the components
+`matrix_ms`, `allocation_ms`, and `routing_ms`, and `results/run_info.json` stores the number of workers and the
+machine.
 
 ## 7. Results
 
@@ -323,9 +340,11 @@ per size.
 | MA-SD | **10,400.2** | 13,116.0 | 10,717.1 | 10,753.4 | **10,400.2** | — |
 | MA-MD | 8,675.1 | 10,754.8 | 8,836.2 | 8,977.0 | **7,997.4** | 150/150 |
 
-Lower cost is better. Optimum hits count the runs (out of 150) that reach the proven optimum; no optimum was
-enumerated for MA-SD, where no allocation decision exists. The full table with best, average, and standard deviation
-of distance, risk exposure, and cost is Table III of the paper.
+Lower cost is better. A\*, BFS, GA, and ACO use the greedy allocation. Optimum hits count the runs (out of 150)
+within 0.05 of the verified optimum; no optimum was enumerated for MA-SD, where no allocation decision exists. In
+Table III of the paper, **Best** reports the distance, risk exposure, and cost of the minimum-cost run of each test
+case (ties: lowest seed), so all three values come from the same run. Run `experiments/paper_tables.py` to rebuild
+Tables III–V. Most ACO optimum hits in SA-SD come from its exact-path fallback (125 of its 150 runs there).
 
 ![Cost relative to A* per main scenario](docs/figures/fig3_main_cost.png)
 
@@ -338,8 +357,10 @@ of distance, risk exposure, and cost is Table III of the paper.
 | GA | 37 / 3 / 0 | −4.3 | −28.6 | 1.3 × 10⁻⁷ |
 | ACO | 40 / 0 / 0 | −8.4 | −26.3 | 7.3 × 10⁻¹² |
 
-The algorithms differ significantly over the 40 cases (Friedman χ² = 134.0, *p* < 10⁻²⁷). Within each case, a hybrid
-run is cheaper than a GA run with probability A₁₂ = 0.88 and than an ACO run with probability A₁₂ = 0.89.
+The five methods differ significantly over the 40 cases (Friedman χ² = 134.0, *p* < 10⁻²⁷). Holm correction is
+applied over the four hybrid-versus-baseline comparisons. The Vargha–Delaney effect size is
+A₁₂ = P(C_hybrid < C_baseline) + ½ P(C_hybrid = C_baseline), averaged over the cases: 0.88 against GA and 0.89 against
+ACO. Because ties count as one half, a hybrid run was strictly cheaper in 76% and 79% of the run pairs.
 
 ### 7.3 Scalability (cost relative to A\* / mean time)
 
@@ -350,7 +371,9 @@ run is cheaper than a GA run with probability A₁₂ = 0.88 and than an ACO run
 | 20 | 16.1 | +0.5 / 12,152 | +3.5 / 570 | **−2.4** / 141 |
 | 30 | 24.5 | +0.3 / 15,175 | +3.4 / 695 | **−2.8** / 279 |
 
-At 30 destinations, the hybrid is 54 times faster than the path-level GA.
+The hybrid improves on the greedy allocation at every size, but the saving does not grow monotonically with the
+number of destinations. At 30 destinations, the hybrid is 54 times faster than the path-level GA; this compares
+complete implementations and does not mean that the GA accelerates the A\* search.
 
 | Routes of each algorithm | Scalability |
 |---|---|
@@ -360,19 +383,26 @@ At 30 destinations, the hybrid is 54 times faster than the path-level GA.
 
 - **Exact paths:** A\* returns the optimal path in milliseconds; path-level GA and ACO are slower, less stable, and
   never achieve a lower cost.
-- **Optimality:** the hybrid reaches the proven optimum in every run of all 15 verifiable cases, with zero standard
-  deviation in all 20 main cases, and is never worse than any baseline.
-- **Source of the gain:** the improvement comes entirely from the allocation level and appears only where an
-  allocation or ordering decision exists (SA-MD, MA-MD, and the scalability cases).
+- **Optimality:** the hybrid reaches the verified optimum in every run of all 15 verifiable cases (up to four
+  destinations), with zero standard deviation in all 20 main cases, and is never worse than any baseline. Optimality
+  is not verified for the larger cases.
+- **Source of the gain:** the improvement over the A\*-based greedy baseline comes from the allocation and visiting
+  order and appears only where such a decision exists (SA-MD, MA-MD, and the scalability cases).
+- **Cost versus safety:** the hybrid minimizes total cost, not risk exposure; its exposure is slightly higher in
+  SA-MD and MA-MD, so a lower cost does not imply a safer route.
+- **Scope:** one static network with simulated risk; the results do not yet support deployment in real disaster
+  operations.
 
 ### 7.5 Result files
 
 | File | Content |
 |---|---|
 | `experiments/results/OptiRoute_Results.xlsx` | All results in one workbook (summary, per case, statistics, scalability, tuning, raw runs) |
-| `experiments/results/main_runs.csv`, `scale_runs.csv` | Every individual run (including the Dijkstra runs) |
-| `experiments/results/table_*.csv`, `stats_*.csv`, `summary.json` | Aggregated tables and statistical tests |
-| `experiments/results/optimum.csv` | Proven optimum of the verifiable cases |
+| `experiments/results/main_runs.csv`, `scale_runs.csv` | Every individual run (including the Dijkstra runs); `covered` counts service visits of all vehicles |
+| `experiments/results/fallback_counts.csv` | Fallback use per GA/ACO run (re-run with identical costs) |
+| `experiments/results/paper/` | Tables III–V and statistics of the paper (`paper_tables.py`) |
+| `experiments/results/table_*.csv`, `stats_*.csv`, `summary.json` | Aggregated tables and statistics of the pipeline (Dijkstra as reference) |
+| `experiments/results/optimum.csv` | Verified optimum of the 15 verifiable cases |
 | `docs/figures/` | Figures of the paper |
 
 ## 8. Repository structure
