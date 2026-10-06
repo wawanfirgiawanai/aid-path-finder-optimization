@@ -1,0 +1,18 @@
+# Pinned dependencies to run OptiRoute and reproduce the paper experiments (Python 3.11).
+fastapi==0.110.1
+starlette==0.37.2
+uvicorn==0.25.0
+pydantic==2.12.5
+python-dotenv==1.2.2
+requests==2.33.1
+networkx==3.6.1
+osmnx==2.1.0
+geopandas==1.1.3
+shapely==2.1.2
+pyproj==3.7.2
+numpy==1.26.4
+pandas==3.0.2
+scipy==1.17.1
+matplotlib==3.10.9
+pytest==9.0.3
+openpyxl==3.1.5

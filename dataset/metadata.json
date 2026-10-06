@@ -1,0 +1,85 @@
+{
+  "network": "mamuju_r1500",
+  "center": [
+    -2.692,
+    118.898
+  ],
+  "radius_m": 1500,
+  "nodes": 455,
+  "edges": 516,
+  "risk_seed": 42,
+  "min_spacing_m": 150.0,
+  "groups": {
+    "SA-SD": {
+      "depots": 1,
+      "agents_per_depot": 1,
+      "destinations": 1,
+      "force_distribution": false,
+      "purpose": "main",
+      "cases": 5
+    },
+    "SA-MD": {
+      "depots": 1,
+      "agents_per_depot": 1,
+      "destinations": 4,
+      "force_distribution": false,
+      "purpose": "main",
+      "cases": 5
+    },
+    "MA-SD": {
+      "depots": 2,
+      "agents_per_depot": 2,
+      "destinations": 1,
+      "force_distribution": true,
+      "purpose": "main",
+      "cases": 5
+    },
+    "MA-MD": {
+      "depots": 2,
+      "agents_per_depot": 2,
+      "destinations": 4,
+      "force_distribution": true,
+      "purpose": "main",
+      "cases": 5
+    },
+    "SC-05": {
+      "depots": 2,
+      "agents_per_depot": 2,
+      "destinations": 5,
+      "force_distribution": true,
+      "purpose": "scalability",
+      "cases": 5
+    },
+    "SC-10": {
+      "depots": 2,
+      "agents_per_depot": 2,
+      "destinations": 10,
+      "force_distribution": true,
+      "purpose": "scalability",
+      "cases": 5
+    },
+    "SC-20": {
+      "depots": 2,
+      "agents_per_depot": 2,
+      "destinations": 20,
+      "force_distribution": true,
+      "purpose": "scalability",
+      "cases": 5
+    },
+    "SC-30": {
+      "depots": 2,
+      "agents_per_depot": 2,
+      "destinations": 30,
+      "force_distribution": true,
+      "purpose": "scalability",
+      "cases": 5
+    }
+  },
+  "tuning_cases": [
+    "TUNE-A",
+    "TUNE-B",
+    "TUNE-C",
+    "TUNE-D"
+  ],
+  "note": "Simulation dataset: road geometry from OpenStreetMap; depots, destinations, agents and risk values are simulated."
+}

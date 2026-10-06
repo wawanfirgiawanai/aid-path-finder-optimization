@@ -1,0 +1,90 @@
+{
+  // Terminal > Run Task... (Ctrl+Shift+B runs the default task "Run App (Backend + Frontend)")
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Backend (FastAPI :8001)",
+      "type": "process",
+      "command": "${workspaceFolder}/backend/.venv/Scripts/python.exe",
+      "args": ["-m", "uvicorn", "server:app", "--host", "127.0.0.1", "--port", "8001"],
+      "options": { "cwd": "${workspaceFolder}/backend" },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "optiroute",
+        "pattern": { "regexp": "^__never_matches__$" },
+        "background": { "activesBegin": true, "beginsPattern": "Started server process|Waiting for application startup", "endsPattern": "Uvicorn running on" }
+      },
+      "presentation": { "group": "app", "panel": "dedicated" }
+    },
+    {
+      "label": "Frontend (React :3000)",
+      "type": "shell",
+      "command": "yarn",
+      "args": ["start"],
+      "options": { "cwd": "${workspaceFolder}/frontend" },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "optiroute",
+        "pattern": { "regexp": "^__never_matches__$" },
+        "background": { "activesBegin": true, "beginsPattern": "Starting the development server|craco", "endsPattern": "Compiled|compiled|Failed to compile" }
+      },
+      "presentation": { "group": "app", "panel": "dedicated" }
+    },
+    {
+      "label": "Run App (Backend + Frontend)",
+      "dependsOn": ["Backend (FastAPI :8001)", "Frontend (React :3000)"],
+      "dependsOrder": "parallel",
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Paper Experiments (40 test cases)",
+      "type": "process",
+      "command": "${workspaceFolder}/backend/.venv/Scripts/python.exe",
+      "args": ["-u", "-W", "ignore", "experiments/run_experiments.py", "--phase", "all",
+               "--jobs", "12", "--out", "experiments/runs/cli", "--params-file", "dataset/tuned_params.json"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "panel": "dedicated", "reveal": "always" }
+    },
+    {
+      "label": "Export Results to Excel",
+      "type": "process",
+      "command": "${workspaceFolder}/backend/.venv/Scripts/python.exe",
+      "args": ["-W", "ignore", "experiments/export_excel.py"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Verify Dataset Reproduction",
+      "type": "process",
+      "command": "${workspaceFolder}/backend/.venv/Scripts/python.exe",
+      "args": ["-W", "ignore", "experiments/verify_dataset.py", "--jobs", "12"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Unit Tests",
+      "type": "process",
+      "command": "${workspaceFolder}/backend/.venv/Scripts/python.exe",
+      "args": ["-m", "pytest", "tests/test_hybrid.py", "-q"],
+      "options": { "cwd": "${workspaceFolder}/backend" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build Dataset and Test Cases",
+      "type": "process",
+      "command": "${workspaceFolder}/backend/.venv/Scripts/python.exe",
+      "args": ["-W", "ignore", "experiments/build_dataset.py"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Install Dependencies (first time)",
+      "type": "shell",
+      "command": "python -m venv backend/.venv; & ./backend/.venv/Scripts/python.exe -m pip install -r backend/requirements.txt; cd frontend; yarn install",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}

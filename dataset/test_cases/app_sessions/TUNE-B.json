@@ -1,0 +1,52 @@
+{
+  "case_id": "TUNE-B",
+  "network": "mamuju_r1500",
+  "note": "Initialize the network at -2.692, 118.898 with radius 1500 m first, then Import.",
+  "startNodes": [
+    {
+      "id": "5593546764",
+      "lat": -2.6821529,
+      "lng": 118.8864865,
+      "agents": 2,
+      "label": "S1"
+    },
+    {
+      "id": "5593728606",
+      "lat": -2.6801903,
+      "lng": 118.897163,
+      "agents": 2,
+      "label": "S2"
+    }
+  ],
+  "endNodes": [
+    {
+      "id": "7490937492",
+      "lat": -2.6800336,
+      "lng": 118.8880643,
+      "label": "E1"
+    },
+    {
+      "id": "5593546162",
+      "lat": -2.6848784,
+      "lng": 118.8916236,
+      "label": "E2"
+    },
+    {
+      "id": "5593731184",
+      "lat": -2.6852106,
+      "lng": 118.8936868,
+      "label": "E3"
+    },
+    {
+      "id": "7490843846",
+      "lat": -2.6805711,
+      "lng": 118.8929292,
+      "label": "E4"
+    }
+  ],
+  "forceDistribution": true,
+  "riskThresholds": {
+    "low_max": 0.33,
+    "medium_max": 0.66
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "ga": {
+    "ga_population": 100,
+    "ga_generations": 200,
+    "ga_crossover_rate": 0.8,
+    "ga_mutation_rate": 0.2,
+    "ga_tournament_k": 3,
+    "ga_elitism": 5
+  },
+  "aco": {
+    "aco_ants": 10,
+    "aco_iterations": 50,
+    "aco_alpha": 1.0,
+    "aco_beta": 1.0,
+    "aco_evaporation": 0.1
+  },
+  "hybrid": {
+    "hga_population": 30,
+    "hga_generations": 100,
+    "hga_crossover_rate": 0.8,
+    "hga_mutation_rate": 0.5,
+    "hga_tournament_k": 3,
+    "hga_elitism": 4,
+    "hga_stagnation_limit": 30
+  }
+}

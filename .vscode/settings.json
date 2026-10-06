@@ -1,0 +1,8 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/backend/.venv/Scripts/python.exe",
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/backend/.venv/**": true,
+    "**/experiments/runs/**": true
+  }
+}

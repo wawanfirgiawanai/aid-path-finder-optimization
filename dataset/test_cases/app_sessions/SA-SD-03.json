@@ -1,0 +1,27 @@
+{
+  "case_id": "SA-SD-03",
+  "network": "mamuju_r1500",
+  "note": "Initialize the network at -2.692, 118.898 with radius 1500 m first, then Import.",
+  "startNodes": [
+    {
+      "id": "5593730913",
+      "lat": -2.68196,
+      "lng": 118.8963309,
+      "agents": 1,
+      "label": "S1"
+    }
+  ],
+  "endNodes": [
+    {
+      "id": "11644859464",
+      "lat": -2.6865839,
+      "lng": 118.8923942,
+      "label": "E1"
+    }
+  ],
+  "forceDistribution": false,
+  "riskThresholds": {
+    "low_max": 0.33,
+    "medium_max": 0.66
+  }
+}

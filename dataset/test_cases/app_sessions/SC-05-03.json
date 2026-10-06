@@ -1,0 +1,58 @@
+{
+  "case_id": "SC-05-03",
+  "network": "mamuju_r1500",
+  "note": "Initialize the network at -2.692, 118.898 with radius 1500 m first, then Import.",
+  "startNodes": [
+    {
+      "id": "5593546770",
+      "lat": -2.681603,
+      "lng": 118.8886477,
+      "agents": 2,
+      "label": "S1"
+    },
+    {
+      "id": "5593730895",
+      "lat": -2.682311,
+      "lng": 118.8960238,
+      "agents": 2,
+      "label": "S2"
+    }
+  ],
+  "endNodes": [
+    {
+      "id": "5593546801",
+      "lat": -2.6839287,
+      "lng": 118.8920353,
+      "label": "E1"
+    },
+    {
+      "id": "2633246085",
+      "lat": -2.6809091,
+      "lng": 118.8971209,
+      "label": "E2"
+    },
+    {
+      "id": "7130185197",
+      "lat": -2.678706,
+      "lng": 118.892144,
+      "label": "E3"
+    },
+    {
+      "id": "5593546752",
+      "lat": -2.6812727,
+      "lng": 118.8869365,
+      "label": "E4"
+    },
+    {
+      "id": "5593730878",
+      "lat": -2.6830223,
+      "lng": 118.8935018,
+      "label": "E5"
+    }
+  ],
+  "forceDistribution": true,
+  "riskThresholds": {
+    "low_max": 0.33,
+    "medium_max": 0.66
+  }
+}

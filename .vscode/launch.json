@@ -1,0 +1,31 @@
+{
+  // F5 / "Run and Debug" -> pick "OptiRoute: Full App" to start backend + frontend together.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Backend (FastAPI :8001)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/backend/.venv/Scripts/python.exe",
+      "module": "uvicorn",
+      "args": ["server:app", "--host", "127.0.0.1", "--port", "8001"],
+      "cwd": "${workspaceFolder}/backend",
+      "justMyCode": true,
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Frontend (React :3000)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn start",
+      "cwd": "${workspaceFolder}/frontend"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "OptiRoute: Full App",
+      "configurations": ["Backend (FastAPI :8001)", "Frontend (React :3000)"],
+      "stopAll": true
+    }
+  ]
+}

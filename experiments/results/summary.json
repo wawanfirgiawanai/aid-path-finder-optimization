@@ -1,0 +1,13 @@
+{
+  "friedman_all_cases": {
+    "statistic": 173.00238284352662,
+    "p": 1.6688443331925432e-35,
+    "cases": 40
+  },
+  "runs": {
+    "main": 3600,
+    "scalability": 1200
+  },
+  "cases_hybrid_reached_optimum": 15,
+  "cases_with_optimum": 15
+}

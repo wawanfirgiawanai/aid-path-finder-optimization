@@ -1,0 +1,3887 @@
+[
+  {
+    "id": "SA-SD-01",
+    "group": "SA-SD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2026,
+    "min_spacing_m": 150.0,
+    "force_distribution": false,
+    "n_depots": 1,
+    "agents_per_depot": 1,
+    "n_agents": 1,
+    "n_destinations": 1,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593545773,
+        "agents": 1,
+        "lat": -2.681534,
+        "lng": 118.8920997
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593546842,
+        "lat": -2.6866892,
+        "lng": 118.8868724
+      }
+    ]
+  },
+  {
+    "id": "SA-SD-02",
+    "group": "SA-SD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2027,
+    "min_spacing_m": 150.0,
+    "force_distribution": false,
+    "n_depots": 1,
+    "agents_per_depot": 1,
+    "n_agents": 1,
+    "n_destinations": 1,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 4989186473,
+        "agents": 1,
+        "lat": -2.6876521,
+        "lng": 118.9059493
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 6978589215,
+        "lat": -2.6820126,
+        "lng": 118.8891003
+      }
+    ]
+  },
+  {
+    "id": "SA-SD-03",
+    "group": "SA-SD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2028,
+    "min_spacing_m": 150.0,
+    "force_distribution": false,
+    "n_depots": 1,
+    "agents_per_depot": 1,
+    "n_agents": 1,
+    "n_destinations": 1,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593730913,
+        "agents": 1,
+        "lat": -2.68196,
+        "lng": 118.8963309
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 11644859464,
+        "lat": -2.6865839,
+        "lng": 118.8923942
+      }
+    ]
+  },
+  {
+    "id": "SA-SD-04",
+    "group": "SA-SD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2029,
+    "min_spacing_m": 150.0,
+    "force_distribution": false,
+    "n_depots": 1,
+    "agents_per_depot": 1,
+    "n_agents": 1,
+    "n_destinations": 1,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 7495810840,
+        "agents": 1,
+        "lat": -2.6863828,
+        "lng": 118.8915681
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 6991673970,
+        "lat": -2.6826164,
+        "lng": 118.8938002
+      }
+    ]
+  },
+  {
+    "id": "SA-SD-05",
+    "group": "SA-SD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2030,
+    "min_spacing_m": 150.0,
+    "force_distribution": false,
+    "n_depots": 1,
+    "agents_per_depot": 1,
+    "n_agents": 1,
+    "n_destinations": 1,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593546771,
+        "agents": 1,
+        "lat": -2.6809883,
+        "lng": 118.888727
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593731204,
+        "lat": -2.6850975,
+        "lng": 118.8932206
+      }
+    ]
+  },
+  {
+    "id": "SA-MD-01",
+    "group": "SA-MD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2026,
+    "min_spacing_m": 150.0,
+    "force_distribution": false,
+    "n_depots": 1,
+    "agents_per_depot": 1,
+    "n_agents": 1,
+    "n_destinations": 4,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593545773,
+        "agents": 1,
+        "lat": -2.681534,
+        "lng": 118.8920997
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593546842,
+        "lat": -2.6866892,
+        "lng": 118.8868724
+      },
+      {
+        "label": "E2",
+        "node_id": 7130185202,
+        "lat": -2.679194,
+        "lng": 118.8918849
+      },
+      {
+        "label": "E3",
+        "node_id": 7229493561,
+        "lat": -2.6890233,
+        "lng": 118.8866515
+      },
+      {
+        "label": "E4",
+        "node_id": 7490964861,
+        "lat": -2.6821294,
+        "lng": 118.8857486
+      }
+    ]
+  },
+  {
+    "id": "SA-MD-02",
+    "group": "SA-MD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2027,
+    "min_spacing_m": 150.0,
+    "force_distribution": false,
+    "n_depots": 1,
+    "agents_per_depot": 1,
+    "n_agents": 1,
+    "n_destinations": 4,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 4989186473,
+        "agents": 1,
+        "lat": -2.6876521,
+        "lng": 118.9059493
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 6978589215,
+        "lat": -2.6820126,
+        "lng": 118.8891003
+      },
+      {
+        "label": "E2",
+        "node_id": 3562335143,
+        "lat": -2.6802906,
+        "lng": 118.8872653
+      },
+      {
+        "label": "E3",
+        "node_id": 2339325841,
+        "lat": -2.6860686,
+        "lng": 118.8884486
+      },
+      {
+        "label": "E4",
+        "node_id": 7491004202,
+        "lat": -2.6953461,
+        "lng": 118.8848251
+      }
+    ]
+  },
+  {
+    "id": "SA-MD-03",
+    "group": "SA-MD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2028,
+    "min_spacing_m": 150.0,
+    "force_distribution": false,
+    "n_depots": 1,
+    "agents_per_depot": 1,
+    "n_agents": 1,
+    "n_destinations": 4,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593730913,
+        "agents": 1,
+        "lat": -2.68196,
+        "lng": 118.8963309
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 11644859464,
+        "lat": -2.6865839,
+        "lng": 118.8923942
+      },
+      {
+        "label": "E2",
+        "node_id": 5593546294,
+        "lat": -2.6890004,
+        "lng": 118.8898738
+      },
+      {
+        "label": "E3",
+        "node_id": 7495757859,
+        "lat": -2.6834273,
+        "lng": 118.892706
+      },
+      {
+        "label": "E4",
+        "node_id": 2632178872,
+        "lat": -2.6907251,
+        "lng": 118.8845529
+      }
+    ]
+  },
+  {
+    "id": "SA-MD-04",
+    "group": "SA-MD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2029,
+    "min_spacing_m": 150.0,
+    "force_distribution": false,
+    "n_depots": 1,
+    "agents_per_depot": 1,
+    "n_agents": 1,
+    "n_destinations": 4,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 7495810840,
+        "agents": 1,
+        "lat": -2.6863828,
+        "lng": 118.8915681
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 6991673970,
+        "lat": -2.6826164,
+        "lng": 118.8938002
+      },
+      {
+        "label": "E2",
+        "node_id": 6986347205,
+        "lat": -2.6930628,
+        "lng": 118.8905272
+      },
+      {
+        "label": "E3",
+        "node_id": 5593546293,
+        "lat": -2.689979,
+        "lng": 118.8890755
+      },
+      {
+        "label": "E4",
+        "node_id": 7495757836,
+        "lat": -2.6842739,
+        "lng": 118.8908067
+      }
+    ]
+  },
+  {
+    "id": "SA-MD-05",
+    "group": "SA-MD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2030,
+    "min_spacing_m": 150.0,
+    "force_distribution": false,
+    "n_depots": 1,
+    "agents_per_depot": 1,
+    "n_agents": 1,
+    "n_destinations": 4,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593546771,
+        "agents": 1,
+        "lat": -2.6809883,
+        "lng": 118.888727
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593731204,
+        "lat": -2.6850975,
+        "lng": 118.8932206
+      },
+      {
+        "label": "E2",
+        "node_id": 5593731168,
+        "lat": -2.691628,
+        "lng": 118.9029787
+      },
+      {
+        "label": "E3",
+        "node_id": 7130185197,
+        "lat": -2.678706,
+        "lng": 118.892144
+      },
+      {
+        "label": "E4",
+        "node_id": 6978589228,
+        "lat": -2.6827323,
+        "lng": 118.8890157
+      }
+    ]
+  },
+  {
+    "id": "MA-SD-01",
+    "group": "MA-SD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2026,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 1,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593545773,
+        "agents": 2,
+        "lat": -2.681534,
+        "lng": 118.8920997
+      },
+      {
+        "label": "S2",
+        "node_id": 5593546842,
+        "agents": 2,
+        "lat": -2.6866892,
+        "lng": 118.8868724
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 7130185202,
+        "lat": -2.679194,
+        "lng": 118.8918849
+      }
+    ]
+  },
+  {
+    "id": "MA-SD-02",
+    "group": "MA-SD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2027,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 1,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 4989186473,
+        "agents": 2,
+        "lat": -2.6876521,
+        "lng": 118.9059493
+      },
+      {
+        "label": "S2",
+        "node_id": 6978589215,
+        "agents": 2,
+        "lat": -2.6820126,
+        "lng": 118.8891003
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 3562335143,
+        "lat": -2.6802906,
+        "lng": 118.8872653
+      }
+    ]
+  },
+  {
+    "id": "MA-SD-03",
+    "group": "MA-SD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2028,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 1,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593730913,
+        "agents": 2,
+        "lat": -2.68196,
+        "lng": 118.8963309
+      },
+      {
+        "label": "S2",
+        "node_id": 11644859464,
+        "agents": 2,
+        "lat": -2.6865839,
+        "lng": 118.8923942
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593546294,
+        "lat": -2.6890004,
+        "lng": 118.8898738
+      }
+    ]
+  },
+  {
+    "id": "MA-SD-04",
+    "group": "MA-SD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2029,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 1,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 7495810840,
+        "agents": 2,
+        "lat": -2.6863828,
+        "lng": 118.8915681
+      },
+      {
+        "label": "S2",
+        "node_id": 6991673970,
+        "agents": 2,
+        "lat": -2.6826164,
+        "lng": 118.8938002
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 6986347205,
+        "lat": -2.6930628,
+        "lng": 118.8905272
+      }
+    ]
+  },
+  {
+    "id": "MA-SD-05",
+    "group": "MA-SD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2030,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 1,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593546771,
+        "agents": 2,
+        "lat": -2.6809883,
+        "lng": 118.888727
+      },
+      {
+        "label": "S2",
+        "node_id": 5593731204,
+        "agents": 2,
+        "lat": -2.6850975,
+        "lng": 118.8932206
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593731168,
+        "lat": -2.691628,
+        "lng": 118.9029787
+      }
+    ]
+  },
+  {
+    "id": "MA-MD-01",
+    "group": "MA-MD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2026,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 4,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593545773,
+        "agents": 2,
+        "lat": -2.681534,
+        "lng": 118.8920997
+      },
+      {
+        "label": "S2",
+        "node_id": 5593546842,
+        "agents": 2,
+        "lat": -2.6866892,
+        "lng": 118.8868724
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 7130185202,
+        "lat": -2.679194,
+        "lng": 118.8918849
+      },
+      {
+        "label": "E2",
+        "node_id": 7229493561,
+        "lat": -2.6890233,
+        "lng": 118.8866515
+      },
+      {
+        "label": "E3",
+        "node_id": 7490964861,
+        "lat": -2.6821294,
+        "lng": 118.8857486
+      },
+      {
+        "label": "E4",
+        "node_id": 13118464480,
+        "lat": -2.6849795,
+        "lng": 118.8979402
+      }
+    ]
+  },
+  {
+    "id": "MA-MD-02",
+    "group": "MA-MD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2027,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 4,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 4989186473,
+        "agents": 2,
+        "lat": -2.6876521,
+        "lng": 118.9059493
+      },
+      {
+        "label": "S2",
+        "node_id": 6978589215,
+        "agents": 2,
+        "lat": -2.6820126,
+        "lng": 118.8891003
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 3562335143,
+        "lat": -2.6802906,
+        "lng": 118.8872653
+      },
+      {
+        "label": "E2",
+        "node_id": 2339325841,
+        "lat": -2.6860686,
+        "lng": 118.8884486
+      },
+      {
+        "label": "E3",
+        "node_id": 7491004202,
+        "lat": -2.6953461,
+        "lng": 118.8848251
+      },
+      {
+        "label": "E4",
+        "node_id": 5593546852,
+        "lat": -2.6873914,
+        "lng": 118.8862252
+      }
+    ]
+  },
+  {
+    "id": "MA-MD-03",
+    "group": "MA-MD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2028,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 4,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593730913,
+        "agents": 2,
+        "lat": -2.68196,
+        "lng": 118.8963309
+      },
+      {
+        "label": "S2",
+        "node_id": 11644859464,
+        "agents": 2,
+        "lat": -2.6865839,
+        "lng": 118.8923942
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593546294,
+        "lat": -2.6890004,
+        "lng": 118.8898738
+      },
+      {
+        "label": "E2",
+        "node_id": 7495757859,
+        "lat": -2.6834273,
+        "lng": 118.892706
+      },
+      {
+        "label": "E3",
+        "node_id": 2632178872,
+        "lat": -2.6907251,
+        "lng": 118.8845529
+      },
+      {
+        "label": "E4",
+        "node_id": 5593731168,
+        "lat": -2.691628,
+        "lng": 118.9029787
+      }
+    ]
+  },
+  {
+    "id": "MA-MD-04",
+    "group": "MA-MD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2029,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 4,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 7495810840,
+        "agents": 2,
+        "lat": -2.6863828,
+        "lng": 118.8915681
+      },
+      {
+        "label": "S2",
+        "node_id": 6991673970,
+        "agents": 2,
+        "lat": -2.6826164,
+        "lng": 118.8938002
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 6986347205,
+        "lat": -2.6930628,
+        "lng": 118.8905272
+      },
+      {
+        "label": "E2",
+        "node_id": 5593546293,
+        "lat": -2.689979,
+        "lng": 118.8890755
+      },
+      {
+        "label": "E3",
+        "node_id": 7495757836,
+        "lat": -2.6842739,
+        "lng": 118.8908067
+      },
+      {
+        "label": "E4",
+        "node_id": 12918520561,
+        "lat": -2.6801608,
+        "lng": 118.8962853
+      }
+    ]
+  },
+  {
+    "id": "MA-MD-05",
+    "group": "MA-MD",
+    "purpose": "main",
+    "network": "mamuju_r1500",
+    "point_seed": 2030,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 4,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593546771,
+        "agents": 2,
+        "lat": -2.6809883,
+        "lng": 118.888727
+      },
+      {
+        "label": "S2",
+        "node_id": 5593731204,
+        "agents": 2,
+        "lat": -2.6850975,
+        "lng": 118.8932206
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593731168,
+        "lat": -2.691628,
+        "lng": 118.9029787
+      },
+      {
+        "label": "E2",
+        "node_id": 7130185197,
+        "lat": -2.678706,
+        "lng": 118.892144
+      },
+      {
+        "label": "E3",
+        "node_id": 6978589228,
+        "lat": -2.6827323,
+        "lng": 118.8890157
+      },
+      {
+        "label": "E4",
+        "node_id": 7495732160,
+        "lat": -2.6931249,
+        "lng": 118.9046293
+      }
+    ]
+  },
+  {
+    "id": "SC-05-01",
+    "group": "SC-05",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 3500,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 5,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5595628730,
+        "agents": 2,
+        "lat": -2.6785196,
+        "lng": 118.8896993
+      },
+      {
+        "label": "S2",
+        "node_id": 7436568541,
+        "agents": 2,
+        "lat": -2.6843864,
+        "lng": 118.8905134
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 7130185227,
+        "lat": -2.6791233,
+        "lng": 118.894625
+      },
+      {
+        "label": "E2",
+        "node_id": 5593546294,
+        "lat": -2.6890004,
+        "lng": 118.8898738
+      },
+      {
+        "label": "E3",
+        "node_id": 9969602536,
+        "lat": -2.6979192,
+        "lng": 118.885868
+      },
+      {
+        "label": "E4",
+        "node_id": 7502311127,
+        "lat": -2.6798101,
+        "lng": 118.8866981
+      },
+      {
+        "label": "E5",
+        "node_id": 5593546731,
+        "lat": -2.6842447,
+        "lng": 118.884505
+      }
+    ]
+  },
+  {
+    "id": "SC-05-02",
+    "group": "SC-05",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 3501,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 5,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593546341,
+        "agents": 2,
+        "lat": -2.6973643,
+        "lng": 118.8880697
+      },
+      {
+        "label": "S2",
+        "node_id": 5593546315,
+        "agents": 2,
+        "lat": -2.6839279,
+        "lng": 118.8907311
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 12918520562,
+        "lat": -2.6803339,
+        "lng": 118.8964603
+      },
+      {
+        "label": "E2",
+        "node_id": 5593546820,
+        "lat": -2.6846835,
+        "lng": 118.8936031
+      },
+      {
+        "label": "E3",
+        "node_id": 5593546161,
+        "lat": -2.6857049,
+        "lng": 118.890251
+      },
+      {
+        "label": "E4",
+        "node_id": 12093713844,
+        "lat": -2.6828251,
+        "lng": 118.8852324
+      },
+      {
+        "label": "E5",
+        "node_id": 5593546765,
+        "lat": -2.6820102,
+        "lng": 118.8870591
+      }
+    ]
+  },
+  {
+    "id": "SC-05-03",
+    "group": "SC-05",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 3502,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 5,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593546770,
+        "agents": 2,
+        "lat": -2.681603,
+        "lng": 118.8886477
+      },
+      {
+        "label": "S2",
+        "node_id": 5593730895,
+        "agents": 2,
+        "lat": -2.682311,
+        "lng": 118.8960238
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593546801,
+        "lat": -2.6839287,
+        "lng": 118.8920353
+      },
+      {
+        "label": "E2",
+        "node_id": 2633246085,
+        "lat": -2.6809091,
+        "lng": 118.8971209
+      },
+      {
+        "label": "E3",
+        "node_id": 7130185197,
+        "lat": -2.678706,
+        "lng": 118.892144
+      },
+      {
+        "label": "E4",
+        "node_id": 5593546752,
+        "lat": -2.6812727,
+        "lng": 118.8869365
+      },
+      {
+        "label": "E5",
+        "node_id": 5593730878,
+        "lat": -2.6830223,
+        "lng": 118.8935018
+      }
+    ]
+  },
+  {
+    "id": "SC-05-04",
+    "group": "SC-05",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 3503,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 5,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5601612685,
+        "agents": 2,
+        "lat": -2.6791722,
+        "lng": 118.8977015
+      },
+      {
+        "label": "S2",
+        "node_id": 6986327563,
+        "agents": 2,
+        "lat": -2.6878236,
+        "lng": 118.8898641
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 2339325814,
+        "lat": -2.680824,
+        "lng": 118.8867829
+      },
+      {
+        "label": "E2",
+        "node_id": 7130185219,
+        "lat": -2.6789448,
+        "lng": 118.8953862
+      },
+      {
+        "label": "E3",
+        "node_id": 11367630195,
+        "lat": -2.6861544,
+        "lng": 118.8994235
+      },
+      {
+        "label": "E4",
+        "node_id": 2633246151,
+        "lat": -2.6845187,
+        "lng": 118.8854788
+      },
+      {
+        "label": "E5",
+        "node_id": 5593546168,
+        "lat": -2.6849407,
+        "lng": 118.891222
+      }
+    ]
+  },
+  {
+    "id": "SC-05-05",
+    "group": "SC-05",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 3504,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 5,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 7436553553,
+        "agents": 2,
+        "lat": -2.683115,
+        "lng": 118.8845181
+      },
+      {
+        "label": "S2",
+        "node_id": 4989186272,
+        "agents": 2,
+        "lat": -2.6874659,
+        "lng": 118.8896213
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593545814,
+        "lat": -2.6823954,
+        "lng": 118.8868298
+      },
+      {
+        "label": "E2",
+        "node_id": 5593546316,
+        "lat": -2.6837739,
+        "lng": 118.8911817
+      },
+      {
+        "label": "E3",
+        "node_id": 4989186278,
+        "lat": -2.6889344,
+        "lng": 118.8898409
+      },
+      {
+        "label": "E4",
+        "node_id": 5595788579,
+        "lat": -2.6823294,
+        "lng": 118.8919525
+      },
+      {
+        "label": "E5",
+        "node_id": 6978589216,
+        "lat": -2.6816682,
+        "lng": 118.8891461
+      }
+    ]
+  },
+  {
+    "id": "SC-10-01",
+    "group": "SC-10",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 4000,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 10,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5595628796,
+        "agents": 2,
+        "lat": -2.6785302,
+        "lng": 118.8889538
+      },
+      {
+        "label": "S2",
+        "node_id": 5595788579,
+        "agents": 2,
+        "lat": -2.6823294,
+        "lng": 118.8919525
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 6978589215,
+        "lat": -2.6820126,
+        "lng": 118.8891003
+      },
+      {
+        "label": "E2",
+        "node_id": 7495770228,
+        "lat": -2.6841041,
+        "lng": 118.8936567
+      },
+      {
+        "label": "E3",
+        "node_id": 5593546658,
+        "lat": -2.6868383,
+        "lng": 118.88777
+      },
+      {
+        "label": "E4",
+        "node_id": 7130185227,
+        "lat": -2.6791233,
+        "lng": 118.894625
+      },
+      {
+        "label": "E5",
+        "node_id": 7495810840,
+        "lat": -2.6863828,
+        "lng": 118.8915681
+      },
+      {
+        "label": "E6",
+        "node_id": 7491004227,
+        "lat": -2.6973795,
+        "lng": 118.8867901
+      },
+      {
+        "label": "E7",
+        "node_id": 6978583685,
+        "lat": -2.6799049,
+        "lng": 118.8845164
+      },
+      {
+        "label": "E8",
+        "node_id": 5593731220,
+        "lat": -2.6909234,
+        "lng": 118.9008182
+      },
+      {
+        "label": "E9",
+        "node_id": 7491057323,
+        "lat": -2.693162,
+        "lng": 118.8897648
+      },
+      {
+        "label": "E10",
+        "node_id": 5589762296,
+        "lat": -2.7054529,
+        "lng": 118.896878
+      }
+    ]
+  },
+  {
+    "id": "SC-10-02",
+    "group": "SC-10",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 4001,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 10,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5595628815,
+        "agents": 2,
+        "lat": -2.6804274,
+        "lng": 118.8846526
+      },
+      {
+        "label": "S2",
+        "node_id": 7491057323,
+        "agents": 2,
+        "lat": -2.693162,
+        "lng": 118.8897648
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593546021,
+        "lat": -2.6839533,
+        "lng": 118.8860507
+      },
+      {
+        "label": "E2",
+        "node_id": 5601612676,
+        "lat": -2.6796973,
+        "lng": 118.8988575
+      },
+      {
+        "label": "E3",
+        "node_id": 5593546318,
+        "lat": -2.6832835,
+        "lng": 118.8906889
+      },
+      {
+        "label": "E4",
+        "node_id": 6988996549,
+        "lat": -2.6873403,
+        "lng": 118.8909757
+      },
+      {
+        "label": "E5",
+        "node_id": 7509065911,
+        "lat": -2.6845569,
+        "lng": 118.8922023
+      },
+      {
+        "label": "E6",
+        "node_id": 13118464479,
+        "lat": -2.6852675,
+        "lng": 118.8978799
+      },
+      {
+        "label": "E7",
+        "node_id": 11367630195,
+        "lat": -2.6861544,
+        "lng": 118.8994235
+      },
+      {
+        "label": "E8",
+        "node_id": 12918520561,
+        "lat": -2.6801608,
+        "lng": 118.8962853
+      },
+      {
+        "label": "E9",
+        "node_id": 7502311687,
+        "lat": -2.6826918,
+        "lng": 118.8890204
+      },
+      {
+        "label": "E10",
+        "node_id": 7491004227,
+        "lat": -2.6973795,
+        "lng": 118.8867901
+      }
+    ]
+  },
+  {
+    "id": "SC-10-03",
+    "group": "SC-10",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 4002,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 10,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 7490953273,
+        "agents": 2,
+        "lat": -2.6812138,
+        "lng": 118.8997963
+      },
+      {
+        "label": "S2",
+        "node_id": 7495757834,
+        "agents": 2,
+        "lat": -2.6839746,
+        "lng": 118.890723
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5601014325,
+        "lat": -2.6891243,
+        "lng": 118.8886289
+      },
+      {
+        "label": "E2",
+        "node_id": 13118477438,
+        "lat": -2.6854072,
+        "lng": 118.8975355
+      },
+      {
+        "label": "E3",
+        "node_id": 6978589220,
+        "lat": -2.6852017,
+        "lng": 118.888155
+      },
+      {
+        "label": "E4",
+        "node_id": 11367630194,
+        "lat": -2.6864987,
+        "lng": 118.8987849
+      },
+      {
+        "label": "E5",
+        "node_id": 4851373845,
+        "lat": -2.6799063,
+        "lng": 118.8971637
+      },
+      {
+        "label": "E6",
+        "node_id": 2632178844,
+        "lat": -2.6851871,
+        "lng": 118.8859253
+      },
+      {
+        "label": "E7",
+        "node_id": 5593546614,
+        "lat": -2.690272,
+        "lng": 118.8852838
+      },
+      {
+        "label": "E8",
+        "node_id": 7502311127,
+        "lat": -2.6798101,
+        "lng": 118.8866981
+      },
+      {
+        "label": "E9",
+        "node_id": 7495926242,
+        "lat": -2.6863365,
+        "lng": 118.8908421
+      },
+      {
+        "label": "E10",
+        "node_id": 2633246040,
+        "lat": -2.6798594,
+        "lng": 118.884898
+      }
+    ]
+  },
+  {
+    "id": "SC-10-04",
+    "group": "SC-10",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 4003,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 10,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 7495731841,
+        "agents": 2,
+        "lat": -2.694795,
+        "lng": 118.9017577
+      },
+      {
+        "label": "S2",
+        "node_id": 5593546618,
+        "agents": 2,
+        "lat": -2.6886675,
+        "lng": 118.886746
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 11367644303,
+        "lat": -2.6853694,
+        "lng": 118.8980502
+      },
+      {
+        "label": "E2",
+        "node_id": 5593546608,
+        "lat": -2.6885516,
+        "lng": 118.8851394
+      },
+      {
+        "label": "E3",
+        "node_id": 5593546021,
+        "lat": -2.6839533,
+        "lng": 118.8860507
+      },
+      {
+        "label": "E4",
+        "node_id": 2817106183,
+        "lat": -2.6798112,
+        "lng": 118.8861385
+      },
+      {
+        "label": "E5",
+        "node_id": 12095200492,
+        "lat": -2.6874071,
+        "lng": 118.893114
+      },
+      {
+        "label": "E6",
+        "node_id": 4989186272,
+        "lat": -2.6874659,
+        "lng": 118.8896213
+      },
+      {
+        "label": "E7",
+        "node_id": 7490953485,
+        "lat": -2.6785251,
+        "lng": 118.8856731
+      },
+      {
+        "label": "E8",
+        "node_id": 7662849989,
+        "lat": -2.6923261,
+        "lng": 118.8907492
+      },
+      {
+        "label": "E9",
+        "node_id": 7495739927,
+        "lat": -2.6930494,
+        "lng": 118.9037767
+      },
+      {
+        "label": "E10",
+        "node_id": 7130185219,
+        "lat": -2.6789448,
+        "lng": 118.8953862
+      }
+    ]
+  },
+  {
+    "id": "SC-10-05",
+    "group": "SC-10",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 4004,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 10,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 6978626427,
+        "agents": 2,
+        "lat": -2.6863348,
+        "lng": 118.8919072
+      },
+      {
+        "label": "S2",
+        "node_id": 7495757833,
+        "agents": 2,
+        "lat": -2.684107,
+        "lng": 118.8904553
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593730913,
+        "lat": -2.68196,
+        "lng": 118.8963309
+      },
+      {
+        "label": "E2",
+        "node_id": 7130172653,
+        "lat": -2.6796707,
+        "lng": 118.8988004
+      },
+      {
+        "label": "E3",
+        "node_id": 7130185236,
+        "lat": -2.6788534,
+        "lng": 118.8954359
+      },
+      {
+        "label": "E4",
+        "node_id": 9969602531,
+        "lat": -2.6980545,
+        "lng": 118.8859434
+      },
+      {
+        "label": "E5",
+        "node_id": 5595627877,
+        "lat": -2.6808561,
+        "lng": 118.8907908
+      },
+      {
+        "label": "E6",
+        "node_id": 2632178872,
+        "lat": -2.6907251,
+        "lng": 118.8845529
+      },
+      {
+        "label": "E7",
+        "node_id": 6978481298,
+        "lat": -2.6810222,
+        "lng": 118.8892495
+      },
+      {
+        "label": "E8",
+        "node_id": 5593731184,
+        "lat": -2.6852106,
+        "lng": 118.8936868
+      },
+      {
+        "label": "E9",
+        "node_id": 7491057317,
+        "lat": -2.6926676,
+        "lng": 118.8903046
+      },
+      {
+        "label": "E10",
+        "node_id": 7490871606,
+        "lat": -2.6825253,
+        "lng": 118.8848296
+      }
+    ]
+  },
+  {
+    "id": "SC-20-01",
+    "group": "SC-20",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 5000,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 20,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593546611,
+        "agents": 2,
+        "lat": -2.6890131,
+        "lng": 118.8849315
+      },
+      {
+        "label": "S2",
+        "node_id": 5593731114,
+        "agents": 2,
+        "lat": -2.6874284,
+        "lng": 118.903538
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 9969602529,
+        "lat": -2.6985583,
+        "lng": 118.8858842
+      },
+      {
+        "label": "E2",
+        "node_id": 5595627871,
+        "lat": -2.6787683,
+        "lng": 118.8876854
+      },
+      {
+        "label": "E3",
+        "node_id": 6978583685,
+        "lat": -2.6799049,
+        "lng": 118.8845164
+      },
+      {
+        "label": "E4",
+        "node_id": 4989186501,
+        "lat": -2.686492,
+        "lng": 118.9114022
+      },
+      {
+        "label": "E5",
+        "node_id": 7130185197,
+        "lat": -2.678706,
+        "lng": 118.892144
+      },
+      {
+        "label": "E6",
+        "node_id": 5595627881,
+        "lat": -2.6816827,
+        "lng": 118.8914922
+      },
+      {
+        "label": "E7",
+        "node_id": 12093713839,
+        "lat": -2.6825019,
+        "lng": 118.8848518
+      },
+      {
+        "label": "E8",
+        "node_id": 2633246027,
+        "lat": -2.6795607,
+        "lng": 118.8971543
+      },
+      {
+        "label": "E9",
+        "node_id": 7130185219,
+        "lat": -2.6789448,
+        "lng": 118.8953862
+      },
+      {
+        "label": "E10",
+        "node_id": 5593728587,
+        "lat": -2.6849192,
+        "lng": 118.8942951
+      },
+      {
+        "label": "E11",
+        "node_id": 7436553570,
+        "lat": -2.685403,
+        "lng": 118.8860865
+      },
+      {
+        "label": "E12",
+        "node_id": 2817106184,
+        "lat": -2.6795788,
+        "lng": 118.8863551
+      },
+      {
+        "label": "E13",
+        "node_id": 6988996542,
+        "lat": -2.6876534,
+        "lng": 118.8912052
+      },
+      {
+        "label": "E14",
+        "node_id": 7491004227,
+        "lat": -2.6973795,
+        "lng": 118.8867901
+      },
+      {
+        "label": "E15",
+        "node_id": 5595628785,
+        "lat": -2.6786892,
+        "lng": 118.8895643
+      },
+      {
+        "label": "E16",
+        "node_id": 7490857861,
+        "lat": -2.6827522,
+        "lng": 118.8877148
+      },
+      {
+        "label": "E17",
+        "node_id": 11367630194,
+        "lat": -2.6864987,
+        "lng": 118.8987849
+      },
+      {
+        "label": "E18",
+        "node_id": 7491039791,
+        "lat": -2.697647,
+        "lng": 118.8883245
+      },
+      {
+        "label": "E19",
+        "node_id": 13118477434,
+        "lat": -2.6856426,
+        "lng": 118.8968942
+      },
+      {
+        "label": "E20",
+        "node_id": 7495757835,
+        "lat": -2.6841637,
+        "lng": 118.8909839
+      }
+    ]
+  },
+  {
+    "id": "SC-20-02",
+    "group": "SC-20",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 5001,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 20,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 7490843812,
+        "agents": 2,
+        "lat": -2.6828535,
+        "lng": 118.8961351
+      },
+      {
+        "label": "S2",
+        "node_id": 5593546784,
+        "agents": 2,
+        "lat": -2.6837859,
+        "lng": 118.8902571
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 7490930629,
+        "lat": -2.679481,
+        "lng": 118.886622
+      },
+      {
+        "label": "E2",
+        "node_id": 5601014325,
+        "lat": -2.6891243,
+        "lng": 118.8886289
+      },
+      {
+        "label": "E3",
+        "node_id": 7495926236,
+        "lat": -2.6855013,
+        "lng": 118.8905487
+      },
+      {
+        "label": "E4",
+        "node_id": 8359134809,
+        "lat": -2.6869781,
+        "lng": 118.8917693
+      },
+      {
+        "label": "E5",
+        "node_id": 7490800183,
+        "lat": -2.6815467,
+        "lng": 118.8900639
+      },
+      {
+        "label": "E6",
+        "node_id": 5593545779,
+        "lat": -2.6819411,
+        "lng": 118.8858971
+      },
+      {
+        "label": "E7",
+        "node_id": 5593545797,
+        "lat": -2.6883396,
+        "lng": 118.8848453
+      },
+      {
+        "label": "E8",
+        "node_id": 7495770238,
+        "lat": -2.6847283,
+        "lng": 118.8919923
+      },
+      {
+        "label": "E9",
+        "node_id": 5593546504,
+        "lat": -2.6863821,
+        "lng": 118.8859782
+      },
+      {
+        "label": "E10",
+        "node_id": 5593731187,
+        "lat": -2.6846486,
+        "lng": 118.8948959
+      },
+      {
+        "label": "E11",
+        "node_id": 5593731195,
+        "lat": -2.6860472,
+        "lng": 118.8948154
+      },
+      {
+        "label": "E12",
+        "node_id": 11478368317,
+        "lat": -2.6848171,
+        "lng": 118.8872084
+      },
+      {
+        "label": "E13",
+        "node_id": 2633246085,
+        "lat": -2.6809091,
+        "lng": 118.8971209
+      },
+      {
+        "label": "E14",
+        "node_id": 5593731327,
+        "lat": -2.6895811,
+        "lng": 118.900951
+      },
+      {
+        "label": "E15",
+        "node_id": 11367630188,
+        "lat": -2.6859328,
+        "lng": 118.898662
+      },
+      {
+        "label": "E16",
+        "node_id": 7436553576,
+        "lat": -2.6828136,
+        "lng": 118.8876541
+      },
+      {
+        "label": "E17",
+        "node_id": 5595628799,
+        "lat": -2.6787569,
+        "lng": 118.8887912
+      },
+      {
+        "label": "E18",
+        "node_id": 2339325816,
+        "lat": -2.6834017,
+        "lng": 118.8846964
+      },
+      {
+        "label": "E19",
+        "node_id": 5593731114,
+        "lat": -2.6874284,
+        "lng": 118.903538
+      },
+      {
+        "label": "E20",
+        "node_id": 5595628815,
+        "lat": -2.6804274,
+        "lng": 118.8846526
+      }
+    ]
+  },
+  {
+    "id": "SC-20-03",
+    "group": "SC-20",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 5002,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 20,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 7490947339,
+        "agents": 2,
+        "lat": -2.6798359,
+        "lng": 118.8861519
+      },
+      {
+        "label": "S2",
+        "node_id": 5593546736,
+        "agents": 2,
+        "lat": -2.6820729,
+        "lng": 118.8848963
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 13118464484,
+        "lat": -2.6846473,
+        "lng": 118.8983667
+      },
+      {
+        "label": "E2",
+        "node_id": 12953451148,
+        "lat": -2.6899531,
+        "lng": 118.8875955
+      },
+      {
+        "label": "E3",
+        "node_id": 2633246009,
+        "lat": -2.6791478,
+        "lng": 118.8884105
+      },
+      {
+        "label": "E4",
+        "node_id": 2339325800,
+        "lat": -2.6817925,
+        "lng": 118.8906895
+      },
+      {
+        "label": "E5",
+        "node_id": 7502311688,
+        "lat": -2.6826506,
+        "lng": 118.8886899
+      },
+      {
+        "label": "E6",
+        "node_id": 7495810836,
+        "lat": -2.6875076,
+        "lng": 118.8924019
+      },
+      {
+        "label": "E7",
+        "node_id": 5593731185,
+        "lat": -2.6853774,
+        "lng": 118.8935307
+      },
+      {
+        "label": "E8",
+        "node_id": 5593546752,
+        "lat": -2.6812727,
+        "lng": 118.8869365
+      },
+      {
+        "label": "E9",
+        "node_id": 4989186442,
+        "lat": -2.6944205,
+        "lng": 118.9026207
+      },
+      {
+        "label": "E10",
+        "node_id": 5593546315,
+        "lat": -2.6839279,
+        "lng": 118.8907311
+      },
+      {
+        "label": "E11",
+        "node_id": 5593546731,
+        "lat": -2.6842447,
+        "lng": 118.884505
+      },
+      {
+        "label": "E12",
+        "node_id": 7495926242,
+        "lat": -2.6863365,
+        "lng": 118.8908421
+      },
+      {
+        "label": "E13",
+        "node_id": 7495757846,
+        "lat": -2.6841471,
+        "lng": 118.8924093
+      },
+      {
+        "label": "E14",
+        "node_id": 5593731161,
+        "lat": -2.6937005,
+        "lng": 118.9050333
+      },
+      {
+        "label": "E15",
+        "node_id": 7491004202,
+        "lat": -2.6953461,
+        "lng": 118.8848251
+      },
+      {
+        "label": "E16",
+        "node_id": 13118477437,
+        "lat": -2.6852153,
+        "lng": 118.897098
+      },
+      {
+        "label": "E17",
+        "node_id": 7490843833,
+        "lat": -2.6794602,
+        "lng": 118.8936111
+      },
+      {
+        "label": "E18",
+        "node_id": 13169063399,
+        "lat": -2.6832421,
+        "lng": 118.8871361
+      },
+      {
+        "label": "E19",
+        "node_id": 4851373989,
+        "lat": -2.6796839,
+        "lng": 118.8971584
+      },
+      {
+        "label": "E20",
+        "node_id": 12953451137,
+        "lat": -2.6909502,
+        "lng": 118.8890326
+      }
+    ]
+  },
+  {
+    "id": "SC-20-04",
+    "group": "SC-20",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 5003,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 20,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593546190,
+        "agents": 2,
+        "lat": -2.6843948,
+        "lng": 118.893859
+      },
+      {
+        "label": "S2",
+        "node_id": 7502320946,
+        "agents": 2,
+        "lat": -2.6795821,
+        "lng": 118.8852919
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 7495926244,
+        "lat": -2.6851704,
+        "lng": 118.8906503
+      },
+      {
+        "label": "E2",
+        "node_id": 5595628785,
+        "lat": -2.6786892,
+        "lng": 118.8895643
+      },
+      {
+        "label": "E3",
+        "node_id": 5593546770,
+        "lat": -2.681603,
+        "lng": 118.8886477
+      },
+      {
+        "label": "E4",
+        "node_id": 7436568519,
+        "lat": -2.688845,
+        "lng": 118.8882359
+      },
+      {
+        "label": "E5",
+        "node_id": 7490843832,
+        "lat": -2.680343,
+        "lng": 118.8922539
+      },
+      {
+        "label": "E6",
+        "node_id": 7490858773,
+        "lat": -2.682473,
+        "lng": 118.8920447
+      },
+      {
+        "label": "E7",
+        "node_id": 13169063399,
+        "lat": -2.6832421,
+        "lng": 118.8871361
+      },
+      {
+        "label": "E8",
+        "node_id": 7229493561,
+        "lat": -2.6890233,
+        "lng": 118.8866515
+      },
+      {
+        "label": "E9",
+        "node_id": 6975654708,
+        "lat": -2.6836292,
+        "lng": 118.8902369
+      },
+      {
+        "label": "E10",
+        "node_id": 7436703833,
+        "lat": -2.6850103,
+        "lng": 118.8858072
+      },
+      {
+        "label": "E11",
+        "node_id": 5593546614,
+        "lat": -2.690272,
+        "lng": 118.8852838
+      },
+      {
+        "label": "E12",
+        "node_id": 13118464480,
+        "lat": -2.6849795,
+        "lng": 118.8979402
+      },
+      {
+        "label": "E13",
+        "node_id": 6988996542,
+        "lat": -2.6876534,
+        "lng": 118.8912052
+      },
+      {
+        "label": "E14",
+        "node_id": 5593546658,
+        "lat": -2.6868383,
+        "lng": 118.88777
+      },
+      {
+        "label": "E15",
+        "node_id": 7495810841,
+        "lat": -2.6846104,
+        "lng": 118.8953787
+      },
+      {
+        "label": "E16",
+        "node_id": 5593546293,
+        "lat": -2.689979,
+        "lng": 118.8890755
+      },
+      {
+        "label": "E17",
+        "node_id": 5936171418,
+        "lat": -2.6792492,
+        "lng": 118.8869827
+      },
+      {
+        "label": "E18",
+        "node_id": 2339325814,
+        "lat": -2.680824,
+        "lng": 118.8867829
+      },
+      {
+        "label": "E19",
+        "node_id": 5593546516,
+        "lat": -2.6932276,
+        "lng": 118.8899191
+      },
+      {
+        "label": "E20",
+        "node_id": 7130185231,
+        "lat": -2.6793738,
+        "lng": 118.8948738
+      }
+    ]
+  },
+  {
+    "id": "SC-20-05",
+    "group": "SC-20",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 5004,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 20,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593546857,
+        "agents": 2,
+        "lat": -2.6873232,
+        "lng": 118.887092
+      },
+      {
+        "label": "S2",
+        "node_id": 5593546757,
+        "agents": 2,
+        "lat": -2.6810775,
+        "lng": 118.8865763
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593546892,
+        "lat": -2.6867009,
+        "lng": 118.8847611
+      },
+      {
+        "label": "E2",
+        "node_id": 7490875444,
+        "lat": -2.6790153,
+        "lng": 118.8957318
+      },
+      {
+        "label": "E3",
+        "node_id": 7490857861,
+        "lat": -2.6827522,
+        "lng": 118.8877148
+      },
+      {
+        "label": "E4",
+        "node_id": 6988996542,
+        "lat": -2.6876534,
+        "lng": 118.8912052
+      },
+      {
+        "label": "E5",
+        "node_id": 5593546748,
+        "lat": -2.6849213,
+        "lng": 118.8867896
+      },
+      {
+        "label": "E6",
+        "node_id": 5593546388,
+        "lat": -2.6837116,
+        "lng": 118.8934818
+      },
+      {
+        "label": "E7",
+        "node_id": 7490964865,
+        "lat": -2.681822,
+        "lng": 118.8854143
+      },
+      {
+        "label": "E8",
+        "node_id": 3562350237,
+        "lat": -2.6851216,
+        "lng": 118.890205
+      },
+      {
+        "label": "E9",
+        "node_id": 4851373845,
+        "lat": -2.6799063,
+        "lng": 118.8971637
+      },
+      {
+        "label": "E10",
+        "node_id": 2633245988,
+        "lat": -2.6786618,
+        "lng": 118.8978276
+      },
+      {
+        "label": "E11",
+        "node_id": 6978481312,
+        "lat": -2.6793242,
+        "lng": 118.8870867
+      },
+      {
+        "label": "E12",
+        "node_id": 7491776518,
+        "lat": -2.6926593,
+        "lng": 118.8916442
+      },
+      {
+        "label": "E13",
+        "node_id": 5593546314,
+        "lat": -2.6827357,
+        "lng": 118.8890997
+      },
+      {
+        "label": "E14",
+        "node_id": 7490883070,
+        "lat": -2.6823471,
+        "lng": 118.892435
+      },
+      {
+        "label": "E15",
+        "node_id": 5593731204,
+        "lat": -2.6850975,
+        "lng": 118.8932206
+      },
+      {
+        "label": "E16",
+        "node_id": 5593546556,
+        "lat": -2.6883456,
+        "lng": 118.8898087
+      },
+      {
+        "label": "E17",
+        "node_id": 5589762296,
+        "lat": -2.7054529,
+        "lng": 118.896878
+      },
+      {
+        "label": "E18",
+        "node_id": 5593546516,
+        "lat": -2.6932276,
+        "lng": 118.8899191
+      },
+      {
+        "label": "E19",
+        "node_id": 2339325800,
+        "lat": -2.6817925,
+        "lng": 118.8906895
+      },
+      {
+        "label": "E20",
+        "node_id": 11644859465,
+        "lat": -2.6866581,
+        "lng": 118.8926174
+      }
+    ]
+  },
+  {
+    "id": "SC-30-01",
+    "group": "SC-30",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 6000,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 30,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593546287,
+        "agents": 2,
+        "lat": -2.6944373,
+        "lng": 118.8910435
+      },
+      {
+        "label": "S2",
+        "node_id": 5593546764,
+        "agents": 2,
+        "lat": -2.6821529,
+        "lng": 118.8864865
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593546237,
+        "lat": -2.6861865,
+        "lng": 118.8928521
+      },
+      {
+        "label": "E2",
+        "node_id": 7495907045,
+        "lat": -2.6852702,
+        "lng": 118.8909383
+      },
+      {
+        "label": "E3",
+        "node_id": 5593546293,
+        "lat": -2.689979,
+        "lng": 118.8890755
+      },
+      {
+        "label": "E4",
+        "node_id": 5593546856,
+        "lat": -2.6872555,
+        "lng": 118.8866723
+      },
+      {
+        "label": "E5",
+        "node_id": 2633246123,
+        "lat": -2.6826726,
+        "lng": 118.8956241
+      },
+      {
+        "label": "E6",
+        "node_id": 5593731187,
+        "lat": -2.6846486,
+        "lng": 118.8948959
+      },
+      {
+        "label": "E7",
+        "node_id": 5593731114,
+        "lat": -2.6874284,
+        "lng": 118.903538
+      },
+      {
+        "label": "E8",
+        "node_id": 7436703832,
+        "lat": -2.6852006,
+        "lng": 118.8854545
+      },
+      {
+        "label": "E9",
+        "node_id": 7491060994,
+        "lat": -2.6792185,
+        "lng": 118.885826
+      },
+      {
+        "label": "E10",
+        "node_id": 7495907050,
+        "lat": -2.6836654,
+        "lng": 118.8929137
+      },
+      {
+        "label": "E11",
+        "node_id": 5595628788,
+        "lat": -2.6788159,
+        "lng": 118.8895744
+      },
+      {
+        "label": "E12",
+        "node_id": 6901787965,
+        "lat": -2.6948854,
+        "lng": 118.8845443
+      },
+      {
+        "label": "E13",
+        "node_id": 5593546896,
+        "lat": -2.6875369,
+        "lng": 118.8847196
+      },
+      {
+        "label": "E14",
+        "node_id": 13118477438,
+        "lat": -2.6854072,
+        "lng": 118.8975355
+      },
+      {
+        "label": "E15",
+        "node_id": 2339325859,
+        "lat": -2.6890071,
+        "lng": 118.8865998
+      },
+      {
+        "label": "E16",
+        "node_id": 7495739927,
+        "lat": -2.6930494,
+        "lng": 118.9037767
+      },
+      {
+        "label": "E17",
+        "node_id": 7130185219,
+        "lat": -2.6789448,
+        "lng": 118.8953862
+      },
+      {
+        "label": "E18",
+        "node_id": 6978481297,
+        "lat": -2.6809192,
+        "lng": 118.8892591
+      },
+      {
+        "label": "E19",
+        "node_id": 7490858773,
+        "lat": -2.682473,
+        "lng": 118.8920447
+      },
+      {
+        "label": "E20",
+        "node_id": 5593546611,
+        "lat": -2.6890131,
+        "lng": 118.8849315
+      },
+      {
+        "label": "E21",
+        "node_id": 3562335143,
+        "lat": -2.6802906,
+        "lng": 118.8872653
+      },
+      {
+        "label": "E22",
+        "node_id": 12953451148,
+        "lat": -2.6899531,
+        "lng": 118.8875955
+      },
+      {
+        "label": "E23",
+        "node_id": 5593731206,
+        "lat": -2.6945933,
+        "lng": 118.9020413
+      },
+      {
+        "label": "E24",
+        "node_id": 11478368317,
+        "lat": -2.6848171,
+        "lng": 118.8872084
+      },
+      {
+        "label": "E25",
+        "node_id": 7130185202,
+        "lat": -2.679194,
+        "lng": 118.8918849
+      },
+      {
+        "label": "E26",
+        "node_id": 2633246085,
+        "lat": -2.6809091,
+        "lng": 118.8971209
+      },
+      {
+        "label": "E27",
+        "node_id": 7491057315,
+        "lat": -2.6929081,
+        "lng": 118.8906849
+      },
+      {
+        "label": "E28",
+        "node_id": 5601008951,
+        "lat": -2.7053873,
+        "lng": 118.8923599
+      },
+      {
+        "label": "E29",
+        "node_id": 6901798206,
+        "lat": -2.6950214,
+        "lng": 118.8978088
+      },
+      {
+        "label": "E30",
+        "node_id": 7490883096,
+        "lat": -2.6788543,
+        "lng": 118.8974495
+      }
+    ]
+  },
+  {
+    "id": "SC-30-02",
+    "group": "SC-30",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 6001,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 30,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593546858,
+        "agents": 2,
+        "lat": -2.6875107,
+        "lng": 118.8872454
+      },
+      {
+        "label": "S2",
+        "node_id": 7495926239,
+        "agents": 2,
+        "lat": -2.6854138,
+        "lng": 118.8907483
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 7490800183,
+        "lat": -2.6815467,
+        "lng": 118.8900639
+      },
+      {
+        "label": "E2",
+        "node_id": 7495810841,
+        "lat": -2.6846104,
+        "lng": 118.8953787
+      },
+      {
+        "label": "E3",
+        "node_id": 5593546239,
+        "lat": -2.6860211,
+        "lng": 118.8926663
+      },
+      {
+        "label": "E4",
+        "node_id": 2339325815,
+        "lat": -2.6844553,
+        "lng": 118.8854357
+      },
+      {
+        "label": "E5",
+        "node_id": 7490964861,
+        "lat": -2.6821294,
+        "lng": 118.8857486
+      },
+      {
+        "label": "E6",
+        "node_id": 13169068003,
+        "lat": -2.6829609,
+        "lng": 118.8869542
+      },
+      {
+        "label": "E7",
+        "node_id": 7491057317,
+        "lat": -2.6926676,
+        "lng": 118.8903046
+      },
+      {
+        "label": "E8",
+        "node_id": 7436568487,
+        "lat": -2.68721,
+        "lng": 118.8851461
+      },
+      {
+        "label": "E9",
+        "node_id": 7491060994,
+        "lat": -2.6792185,
+        "lng": 118.885826
+      },
+      {
+        "label": "E10",
+        "node_id": 5593728576,
+        "lat": -2.6806049,
+        "lng": 118.8985685
+      },
+      {
+        "label": "E11",
+        "node_id": 7490883093,
+        "lat": -2.6785238,
+        "lng": 118.8972267
+      },
+      {
+        "label": "E12",
+        "node_id": 13118464483,
+        "lat": -2.6848442,
+        "lng": 118.8982393
+      },
+      {
+        "label": "E13",
+        "node_id": 5595627871,
+        "lat": -2.6787683,
+        "lng": 118.8876854
+      },
+      {
+        "label": "E14",
+        "node_id": 7490843817,
+        "lat": -2.6828394,
+        "lng": 118.895725
+      },
+      {
+        "label": "E15",
+        "node_id": 5593730878,
+        "lat": -2.6830223,
+        "lng": 118.8935018
+      },
+      {
+        "label": "E16",
+        "node_id": 5601014325,
+        "lat": -2.6891243,
+        "lng": 118.8886289
+      },
+      {
+        "label": "E17",
+        "node_id": 7490950495,
+        "lat": -2.678848,
+        "lng": 118.8844997
+      },
+      {
+        "label": "E18",
+        "node_id": 7490883073,
+        "lat": -2.682528,
+        "lng": 118.8916645
+      },
+      {
+        "label": "E19",
+        "node_id": 7130185227,
+        "lat": -2.6791233,
+        "lng": 118.894625
+      },
+      {
+        "label": "E20",
+        "node_id": 7495739927,
+        "lat": -2.6930494,
+        "lng": 118.9037767
+      },
+      {
+        "label": "E21",
+        "node_id": 2633246052,
+        "lat": -2.6800858,
+        "lng": 118.8893317
+      },
+      {
+        "label": "E22",
+        "node_id": 4989186501,
+        "lat": -2.686492,
+        "lng": 118.9114022
+      },
+      {
+        "label": "E23",
+        "node_id": 7490836398,
+        "lat": -2.6792297,
+        "lng": 118.8926841
+      },
+      {
+        "label": "E24",
+        "node_id": 7490843846,
+        "lat": -2.6805711,
+        "lng": 118.8929292
+      },
+      {
+        "label": "E25",
+        "node_id": 4989186272,
+        "lat": -2.6874659,
+        "lng": 118.8896213
+      },
+      {
+        "label": "E26",
+        "node_id": 7490863607,
+        "lat": -2.6808809,
+        "lng": 118.8863444
+      },
+      {
+        "label": "E27",
+        "node_id": 9969602538,
+        "lat": -2.6980308,
+        "lng": 118.8857594
+      },
+      {
+        "label": "E28",
+        "node_id": 6975997123,
+        "lat": -2.6813364,
+        "lng": 118.8877982
+      },
+      {
+        "label": "E29",
+        "node_id": 6978589213,
+        "lat": -2.6837065,
+        "lng": 118.888853
+      },
+      {
+        "label": "E30",
+        "node_id": 5593546839,
+        "lat": -2.685782,
+        "lng": 118.8871577
+      }
+    ]
+  },
+  {
+    "id": "SC-30-03",
+    "group": "SC-30",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 6002,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 30,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 7502320946,
+        "agents": 2,
+        "lat": -2.6795821,
+        "lng": 118.8852919
+      },
+      {
+        "label": "S2",
+        "node_id": 5593546287,
+        "agents": 2,
+        "lat": -2.6944373,
+        "lng": 118.8910435
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593545783,
+        "lat": -2.6849802,
+        "lng": 118.8848765
+      },
+      {
+        "label": "E2",
+        "node_id": 7491004189,
+        "lat": -2.6963248,
+        "lng": 118.8849168
+      },
+      {
+        "label": "E3",
+        "node_id": 7490883015,
+        "lat": -2.6817857,
+        "lng": 118.8907965
+      },
+      {
+        "label": "E4",
+        "node_id": 2339325861,
+        "lat": -2.686825,
+        "lng": 118.8877037
+      },
+      {
+        "label": "E5",
+        "node_id": 7490953273,
+        "lat": -2.6812138,
+        "lng": 118.8997963
+      },
+      {
+        "label": "E6",
+        "node_id": 7495770254,
+        "lat": -2.6853328,
+        "lng": 118.8976187
+      },
+      {
+        "label": "E7",
+        "node_id": 5593728576,
+        "lat": -2.6806049,
+        "lng": 118.8985685
+      },
+      {
+        "label": "E8",
+        "node_id": 5593546803,
+        "lat": -2.6843633,
+        "lng": 118.8915834
+      },
+      {
+        "label": "E9",
+        "node_id": 2339325786,
+        "lat": -2.681461,
+        "lng": 118.888132
+      },
+      {
+        "label": "E10",
+        "node_id": 7495926242,
+        "lat": -2.6863365,
+        "lng": 118.8908421
+      },
+      {
+        "label": "E11",
+        "node_id": 5593546896,
+        "lat": -2.6875369,
+        "lng": 118.8847196
+      },
+      {
+        "label": "E12",
+        "node_id": 5593730913,
+        "lat": -2.68196,
+        "lng": 118.8963309
+      },
+      {
+        "label": "E13",
+        "node_id": 7495926234,
+        "lat": -2.6845582,
+        "lng": 118.8950945
+      },
+      {
+        "label": "E14",
+        "node_id": 2817312260,
+        "lat": -2.6809791,
+        "lng": 118.8851043
+      },
+      {
+        "label": "E15",
+        "node_id": 11367630190,
+        "lat": -2.6861665,
+        "lng": 118.89881
+      },
+      {
+        "label": "E16",
+        "node_id": 6991676485,
+        "lat": -2.6785292,
+        "lng": 118.893009
+      },
+      {
+        "label": "E17",
+        "node_id": 7130185219,
+        "lat": -2.6789448,
+        "lng": 118.8953862
+      },
+      {
+        "label": "E18",
+        "node_id": 7491057315,
+        "lat": -2.6929081,
+        "lng": 118.8906849
+      },
+      {
+        "label": "E19",
+        "node_id": 5593546390,
+        "lat": -2.6830196,
+        "lng": 118.8939813
+      },
+      {
+        "label": "E20",
+        "node_id": 7495731841,
+        "lat": -2.694795,
+        "lng": 118.9017577
+      },
+      {
+        "label": "E21",
+        "node_id": 4989186280,
+        "lat": -2.6894542,
+        "lng": 118.890479
+      },
+      {
+        "label": "E22",
+        "node_id": 5593731181,
+        "lat": -2.6855716,
+        "lng": 118.894114
+      },
+      {
+        "label": "E23",
+        "node_id": 2633246027,
+        "lat": -2.6795607,
+        "lng": 118.8971543
+      },
+      {
+        "label": "E24",
+        "node_id": 7490843846,
+        "lat": -2.6805711,
+        "lng": 118.8929292
+      },
+      {
+        "label": "E25",
+        "node_id": 5593731220,
+        "lat": -2.6909234,
+        "lng": 118.9008182
+      },
+      {
+        "label": "E26",
+        "node_id": 5593546314,
+        "lat": -2.6827357,
+        "lng": 118.8890997
+      },
+      {
+        "label": "E27",
+        "node_id": 7502311127,
+        "lat": -2.6798101,
+        "lng": 118.8866981
+      },
+      {
+        "label": "E28",
+        "node_id": 5593546551,
+        "lat": -2.6888337,
+        "lng": 118.8886128
+      },
+      {
+        "label": "E29",
+        "node_id": 5593546618,
+        "lat": -2.6886675,
+        "lng": 118.886746
+      },
+      {
+        "label": "E30",
+        "node_id": 5593546815,
+        "lat": -2.6836533,
+        "lng": 118.892738
+      }
+    ]
+  },
+  {
+    "id": "SC-30-04",
+    "group": "SC-30",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 6003,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 30,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593546772,
+        "agents": 2,
+        "lat": -2.681047,
+        "lng": 118.8887305
+      },
+      {
+        "label": "S2",
+        "node_id": 7490964865,
+        "agents": 2,
+        "lat": -2.681822,
+        "lng": 118.8854143
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 7490858767,
+        "lat": -2.6795419,
+        "lng": 118.8968995
+      },
+      {
+        "label": "E2",
+        "node_id": 5593546753,
+        "lat": -2.6809794,
+        "lng": 118.8870692
+      },
+      {
+        "label": "E3",
+        "node_id": 5593546316,
+        "lat": -2.6837739,
+        "lng": 118.8911817
+      },
+      {
+        "label": "E4",
+        "node_id": 5593731195,
+        "lat": -2.6860472,
+        "lng": 118.8948154
+      },
+      {
+        "label": "E5",
+        "node_id": 5593546852,
+        "lat": -2.6873914,
+        "lng": 118.8862252
+      },
+      {
+        "label": "E6",
+        "node_id": 11367644299,
+        "lat": -2.6847531,
+        "lng": 118.8985651
+      },
+      {
+        "label": "E7",
+        "node_id": 2633246085,
+        "lat": -2.6809091,
+        "lng": 118.8971209
+      },
+      {
+        "label": "E8",
+        "node_id": 7495810836,
+        "lat": -2.6875076,
+        "lng": 118.8924019
+      },
+      {
+        "label": "E9",
+        "node_id": 7502320946,
+        "lat": -2.6795821,
+        "lng": 118.8852919
+      },
+      {
+        "label": "E10",
+        "node_id": 2633246162,
+        "lat": -2.6853005,
+        "lng": 118.8845494
+      },
+      {
+        "label": "E11",
+        "node_id": 5593546189,
+        "lat": -2.6842548,
+        "lng": 118.8936849
+      },
+      {
+        "label": "E12",
+        "node_id": 7130185197,
+        "lat": -2.678706,
+        "lng": 118.892144
+      },
+      {
+        "label": "E13",
+        "node_id": 6978481312,
+        "lat": -2.6793242,
+        "lng": 118.8870867
+      },
+      {
+        "label": "E14",
+        "node_id": 11367630191,
+        "lat": -2.6859454,
+        "lng": 118.8992518
+      },
+      {
+        "label": "E15",
+        "node_id": 5593546556,
+        "lat": -2.6883456,
+        "lng": 118.8898087
+      },
+      {
+        "label": "E16",
+        "node_id": 5589762296,
+        "lat": -2.7054529,
+        "lng": 118.896878
+      },
+      {
+        "label": "E17",
+        "node_id": 5593546341,
+        "lat": -2.6973643,
+        "lng": 118.8880697
+      },
+      {
+        "label": "E18",
+        "node_id": 7495732167,
+        "lat": -2.6949457,
+        "lng": 118.9022287
+      },
+      {
+        "label": "E19",
+        "node_id": 5593546165,
+        "lat": -2.6852394,
+        "lng": 118.8912454
+      },
+      {
+        "label": "E20",
+        "node_id": 13118477437,
+        "lat": -2.6852153,
+        "lng": 118.897098
+      },
+      {
+        "label": "E21",
+        "node_id": 2632178872,
+        "lat": -2.6907251,
+        "lng": 118.8845529
+      },
+      {
+        "label": "E22",
+        "node_id": 5593731161,
+        "lat": -2.6937005,
+        "lng": 118.9050333
+      },
+      {
+        "label": "E23",
+        "node_id": 11368293507,
+        "lat": -2.6822287,
+        "lng": 118.8915027
+      },
+      {
+        "label": "E24",
+        "node_id": 5593546608,
+        "lat": -2.6885516,
+        "lng": 118.8851394
+      },
+      {
+        "label": "E25",
+        "node_id": 5593546740,
+        "lat": -2.6848155,
+        "lng": 118.8867854
+      },
+      {
+        "label": "E26",
+        "node_id": 7495739927,
+        "lat": -2.6930494,
+        "lng": 118.9037767
+      },
+      {
+        "label": "E27",
+        "node_id": 5593546618,
+        "lat": -2.6886675,
+        "lng": 118.886746
+      },
+      {
+        "label": "E28",
+        "node_id": 5593546239,
+        "lat": -2.6860211,
+        "lng": 118.8926663
+      },
+      {
+        "label": "E29",
+        "node_id": 5593546304,
+        "lat": -2.6814288,
+        "lng": 118.8901578
+      },
+      {
+        "label": "E30",
+        "node_id": 2339325861,
+        "lat": -2.686825,
+        "lng": 118.8877037
+      }
+    ]
+  },
+  {
+    "id": "SC-30-05",
+    "group": "SC-30",
+    "purpose": "scalability",
+    "network": "mamuju_r1500",
+    "point_seed": 6004,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 30,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 7130185219,
+        "agents": 2,
+        "lat": -2.6789448,
+        "lng": 118.8953862
+      },
+      {
+        "label": "S2",
+        "node_id": 7495926244,
+        "agents": 2,
+        "lat": -2.6851704,
+        "lng": 118.8906503
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593546749,
+        "lat": -2.6847773,
+        "lng": 118.8865877
+      },
+      {
+        "label": "E2",
+        "node_id": 11367630187,
+        "lat": -2.6856909,
+        "lng": 118.8991311
+      },
+      {
+        "label": "E3",
+        "node_id": 6978589228,
+        "lat": -2.6827323,
+        "lng": 118.8890157
+      },
+      {
+        "label": "E4",
+        "node_id": 6988996549,
+        "lat": -2.6873403,
+        "lng": 118.8909757
+      },
+      {
+        "label": "E5",
+        "node_id": 12093713839,
+        "lat": -2.6825019,
+        "lng": 118.8848518
+      },
+      {
+        "label": "E6",
+        "node_id": 11644859464,
+        "lat": -2.6865839,
+        "lng": 118.8923942
+      },
+      {
+        "label": "E7",
+        "node_id": 5593546858,
+        "lat": -2.6875107,
+        "lng": 118.8872454
+      },
+      {
+        "label": "E8",
+        "node_id": 5593546793,
+        "lat": -2.6833668,
+        "lng": 118.8919499
+      },
+      {
+        "label": "E9",
+        "node_id": 5595628814,
+        "lat": -2.6790307,
+        "lng": 118.8883301
+      },
+      {
+        "label": "E10",
+        "node_id": 7491060995,
+        "lat": -2.6787589,
+        "lng": 118.886335
+      },
+      {
+        "label": "E11",
+        "node_id": 7495757837,
+        "lat": -2.6848981,
+        "lng": 118.8934041
+      },
+      {
+        "label": "E12",
+        "node_id": 5593546734,
+        "lat": -2.6839633,
+        "lng": 118.8850651
+      },
+      {
+        "label": "E13",
+        "node_id": 7490950495,
+        "lat": -2.678848,
+        "lng": 118.8844997
+      },
+      {
+        "label": "E14",
+        "node_id": 5593546752,
+        "lat": -2.6812727,
+        "lng": 118.8869365
+      },
+      {
+        "label": "E15",
+        "node_id": 7490843846,
+        "lat": -2.6805711,
+        "lng": 118.8929292
+      },
+      {
+        "label": "E16",
+        "node_id": 12918520561,
+        "lat": -2.6801608,
+        "lng": 118.8962853
+      },
+      {
+        "label": "E17",
+        "node_id": 7495731841,
+        "lat": -2.694795,
+        "lng": 118.9017577
+      },
+      {
+        "label": "E18",
+        "node_id": 7491004189,
+        "lat": -2.6963248,
+        "lng": 118.8849168
+      },
+      {
+        "label": "E19",
+        "node_id": 5593546891,
+        "lat": -2.6866474,
+        "lng": 118.8847766
+      },
+      {
+        "label": "E20",
+        "node_id": 5593546772,
+        "lat": -2.681047,
+        "lng": 118.8887305
+      },
+      {
+        "label": "E21",
+        "node_id": 5593546339,
+        "lat": -2.6943087,
+        "lng": 118.8895543
+      },
+      {
+        "label": "E22",
+        "node_id": 7490883096,
+        "lat": -2.6788543,
+        "lng": 118.8974495
+      },
+      {
+        "label": "E23",
+        "node_id": 6975974909,
+        "lat": -2.6786095,
+        "lng": 118.890705
+      },
+      {
+        "label": "E24",
+        "node_id": 5595628815,
+        "lat": -2.6804274,
+        "lng": 118.8846526
+      },
+      {
+        "label": "E25",
+        "node_id": 6901798206,
+        "lat": -2.6950214,
+        "lng": 118.8978088
+      },
+      {
+        "label": "E26",
+        "node_id": 2633246123,
+        "lat": -2.6826726,
+        "lng": 118.8956241
+      },
+      {
+        "label": "E27",
+        "node_id": 8348020929,
+        "lat": -2.6801462,
+        "lng": 118.890443
+      },
+      {
+        "label": "E28",
+        "node_id": 7491776518,
+        "lat": -2.6926593,
+        "lng": 118.8916442
+      },
+      {
+        "label": "E29",
+        "node_id": 13118477438,
+        "lat": -2.6854072,
+        "lng": 118.8975355
+      },
+      {
+        "label": "E30",
+        "node_id": 5601014325,
+        "lat": -2.6891243,
+        "lng": 118.8886289
+      }
+    ]
+  },
+  {
+    "id": "TUNE-A",
+    "group": "TUNE",
+    "purpose": "tuning",
+    "network": "mamuju_r1500",
+    "point_seed": 9001,
+    "min_spacing_m": 150.0,
+    "force_distribution": false,
+    "n_depots": 1,
+    "agents_per_depot": 1,
+    "n_agents": 1,
+    "n_destinations": 4,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 2633245993,
+        "agents": 1,
+        "lat": -2.6789068,
+        "lng": 118.8882625
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 5593546795,
+        "lat": -2.6846888,
+        "lng": 118.890713
+      },
+      {
+        "label": "E2",
+        "node_id": 5593546735,
+        "lat": -2.6818836,
+        "lng": 118.8850924
+      },
+      {
+        "label": "E3",
+        "node_id": 2817308145,
+        "lat": -2.6805259,
+        "lng": 118.8856919
+      },
+      {
+        "label": "E4",
+        "node_id": 5593546734,
+        "lat": -2.6839633,
+        "lng": 118.8850651
+      }
+    ]
+  },
+  {
+    "id": "TUNE-B",
+    "group": "TUNE",
+    "purpose": "tuning",
+    "network": "mamuju_r1500",
+    "point_seed": 9002,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 4,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 5593546764,
+        "agents": 2,
+        "lat": -2.6821529,
+        "lng": 118.8864865
+      },
+      {
+        "label": "S2",
+        "node_id": 5593728606,
+        "agents": 2,
+        "lat": -2.6801903,
+        "lng": 118.897163
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 7490937492,
+        "lat": -2.6800336,
+        "lng": 118.8880643
+      },
+      {
+        "label": "E2",
+        "node_id": 5593546162,
+        "lat": -2.6848784,
+        "lng": 118.8916236
+      },
+      {
+        "label": "E3",
+        "node_id": 5593731184,
+        "lat": -2.6852106,
+        "lng": 118.8936868
+      },
+      {
+        "label": "E4",
+        "node_id": 7490843846,
+        "lat": -2.6805711,
+        "lng": 118.8929292
+      }
+    ]
+  },
+  {
+    "id": "TUNE-C",
+    "group": "TUNE",
+    "purpose": "tuning",
+    "network": "mamuju_r1500",
+    "point_seed": 9003,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 20,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 7490843812,
+        "agents": 2,
+        "lat": -2.6828535,
+        "lng": 118.8961351
+      },
+      {
+        "label": "S2",
+        "node_id": 7490930629,
+        "agents": 2,
+        "lat": -2.679481,
+        "lng": 118.886622
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 9969602536,
+        "lat": -2.6979192,
+        "lng": 118.885868
+      },
+      {
+        "label": "E2",
+        "node_id": 2633245985,
+        "lat": -2.6785412,
+        "lng": 118.8880201
+      },
+      {
+        "label": "E3",
+        "node_id": 2633246162,
+        "lat": -2.6853005,
+        "lng": 118.8845494
+      },
+      {
+        "label": "E4",
+        "node_id": 7436553576,
+        "lat": -2.6828136,
+        "lng": 118.8876541
+      },
+      {
+        "label": "E5",
+        "node_id": 7490843833,
+        "lat": -2.6794602,
+        "lng": 118.8936111
+      },
+      {
+        "label": "E6",
+        "node_id": 5593546658,
+        "lat": -2.6868383,
+        "lng": 118.88777
+      },
+      {
+        "label": "E7",
+        "node_id": 7490883060,
+        "lat": -2.6822138,
+        "lng": 118.8926817
+      },
+      {
+        "label": "E8",
+        "node_id": 5593546504,
+        "lat": -2.6863821,
+        "lng": 118.8859782
+      },
+      {
+        "label": "E9",
+        "node_id": 5593546797,
+        "lat": -2.6844136,
+        "lng": 118.8908794
+      },
+      {
+        "label": "E10",
+        "node_id": 12918520562,
+        "lat": -2.6803339,
+        "lng": 118.8964603
+      },
+      {
+        "label": "E11",
+        "node_id": 6978589216,
+        "lat": -2.6816682,
+        "lng": 118.8891461
+      },
+      {
+        "label": "E12",
+        "node_id": 5593546293,
+        "lat": -2.689979,
+        "lng": 118.8890755
+      },
+      {
+        "label": "E13",
+        "node_id": 5595628730,
+        "lat": -2.6785196,
+        "lng": 118.8896993
+      },
+      {
+        "label": "E14",
+        "node_id": 7130185197,
+        "lat": -2.678706,
+        "lng": 118.892144
+      },
+      {
+        "label": "E15",
+        "node_id": 7490858778,
+        "lat": -2.6804187,
+        "lng": 118.8909169
+      },
+      {
+        "label": "E16",
+        "node_id": 7490883015,
+        "lat": -2.6817857,
+        "lng": 118.8907965
+      },
+      {
+        "label": "E17",
+        "node_id": 7490863605,
+        "lat": -2.6811209,
+        "lng": 118.88654
+      },
+      {
+        "label": "E18",
+        "node_id": 2817311914,
+        "lat": -2.6806897,
+        "lng": 118.8847677
+      },
+      {
+        "label": "E19",
+        "node_id": 5593546614,
+        "lat": -2.690272,
+        "lng": 118.8852838
+      },
+      {
+        "label": "E20",
+        "node_id": 5593546605,
+        "lat": -2.6885778,
+        "lng": 118.8845607
+      }
+    ]
+  },
+  {
+    "id": "TUNE-D",
+    "group": "TUNE",
+    "purpose": "tuning",
+    "network": "mamuju_r1500",
+    "point_seed": 9004,
+    "min_spacing_m": 150.0,
+    "force_distribution": true,
+    "n_depots": 2,
+    "agents_per_depot": 2,
+    "n_agents": 4,
+    "n_destinations": 30,
+    "depots": [
+      {
+        "label": "S1",
+        "node_id": 6978583685,
+        "agents": 2,
+        "lat": -2.6799049,
+        "lng": 118.8845164
+      },
+      {
+        "label": "S2",
+        "node_id": 6978589228,
+        "agents": 2,
+        "lat": -2.6827323,
+        "lng": 118.8890157
+      }
+    ],
+    "destinations": [
+      {
+        "label": "E1",
+        "node_id": 6978500584,
+        "lat": -2.6812366,
+        "lng": 118.8854774
+      },
+      {
+        "label": "E2",
+        "node_id": 12093713844,
+        "lat": -2.6828251,
+        "lng": 118.8852324
+      },
+      {
+        "label": "E3",
+        "node_id": 2339325841,
+        "lat": -2.6860686,
+        "lng": 118.8884486
+      },
+      {
+        "label": "E4",
+        "node_id": 5593546793,
+        "lat": -2.6833668,
+        "lng": 118.8919499
+      },
+      {
+        "label": "E5",
+        "node_id": 6988996549,
+        "lat": -2.6873403,
+        "lng": 118.8909757
+      },
+      {
+        "label": "E6",
+        "node_id": 11644859465,
+        "lat": -2.6866581,
+        "lng": 118.8926174
+      },
+      {
+        "label": "E7",
+        "node_id": 2633246151,
+        "lat": -2.6845187,
+        "lng": 118.8854788
+      },
+      {
+        "label": "E8",
+        "node_id": 11367644303,
+        "lat": -2.6853694,
+        "lng": 118.8980502
+      },
+      {
+        "label": "E9",
+        "node_id": 11368293506,
+        "lat": -2.6819828,
+        "lng": 118.8914278
+      },
+      {
+        "label": "E10",
+        "node_id": 2339325887,
+        "lat": -2.6799425,
+        "lng": 118.8950448
+      },
+      {
+        "label": "E11",
+        "node_id": 5589762300,
+        "lat": -2.7035105,
+        "lng": 118.8953519
+      },
+      {
+        "label": "E12",
+        "node_id": 5593546771,
+        "lat": -2.6809883,
+        "lng": 118.888727
+      },
+      {
+        "label": "E13",
+        "node_id": 5593546896,
+        "lat": -2.6875369,
+        "lng": 118.8847196
+      },
+      {
+        "label": "E14",
+        "node_id": 5593546842,
+        "lat": -2.6866892,
+        "lng": 118.8868724
+      },
+      {
+        "label": "E15",
+        "node_id": 5593731187,
+        "lat": -2.6846486,
+        "lng": 118.8948959
+      },
+      {
+        "label": "E16",
+        "node_id": 4989186501,
+        "lat": -2.686492,
+        "lng": 118.9114022
+      },
+      {
+        "label": "E17",
+        "node_id": 6986449292,
+        "lat": -2.6856357,
+        "lng": 118.890357
+      },
+      {
+        "label": "E18",
+        "node_id": 5593546187,
+        "lat": -2.6840987,
+        "lng": 118.8934991
+      },
+      {
+        "label": "E19",
+        "node_id": 2633245988,
+        "lat": -2.6786618,
+        "lng": 118.8978276
+      },
+      {
+        "label": "E20",
+        "node_id": 7490836397,
+        "lat": -2.6789712,
+        "lng": 118.8924739
+      },
+      {
+        "label": "E21",
+        "node_id": 6901787965,
+        "lat": -2.6948854,
+        "lng": 118.8845443
+      },
+      {
+        "label": "E22",
+        "node_id": 7490852512,
+        "lat": -2.6824476,
+        "lng": 118.8874461
+      },
+      {
+        "label": "E23",
+        "node_id": 5595628814,
+        "lat": -2.6790307,
+        "lng": 118.8883301
+      },
+      {
+        "label": "E24",
+        "node_id": 7495757834,
+        "lat": -2.6839746,
+        "lng": 118.890723
+      },
+      {
+        "label": "E25",
+        "node_id": 5593730881,
+        "lat": -2.6827845,
+        "lng": 118.8938676
+      },
+      {
+        "label": "E26",
+        "node_id": 5593546746,
+        "lat": -2.6853774,
+        "lng": 118.8865247
+      },
+      {
+        "label": "E27",
+        "node_id": 7502311128,
+        "lat": -2.679637,
+        "lng": 118.8867903
+      },
+      {
+        "label": "E28",
+        "node_id": 7491004227,
+        "lat": -2.6973795,
+        "lng": 118.8867901
+      },
+      {
+        "label": "E29",
+        "node_id": 7491039791,
+        "lat": -2.697647,
+        "lng": 118.8883245
+      },
+      {
+        "label": "E30",
+        "node_id": 7495739927,
+        "lat": -2.6930494,
+        "lng": 118.9037767
+      }
+    ]
+  }
+]

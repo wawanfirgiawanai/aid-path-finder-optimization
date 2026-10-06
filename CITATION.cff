@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: "If you use this software or dataset, please cite the paper listed under preferred-citation."
+title: "OptiRoute: Risk-Aware Disaster Relief Routing with a Two-Level Hybrid A*-GA (code, Mamuju dataset, and 40 test cases)"
+type: software
+version: "1.0.0"
+authors:
+  - family-names: Firgiawan
+    given-names: Wawan
+    affiliation: "Institut Teknologi Sepuluh Nopember"
+  - family-names: Amaliah
+    given-names: Bilqis
+    affiliation: "Institut Teknologi Sepuluh Nopember"
+  - family-names: Saikhu
+    given-names: Ahmad
+    affiliation: "Institut Teknologi Sepuluh Nopember"
+  - family-names: Basori
+    given-names: Ahmad Hoirul
+    affiliation: "King Abdulaziz University"
+  - family-names: Sulfayanti
+    affiliation: "Universitas Sulawesi Barat"
+  - family-names: Nur
+    given-names: Nahya
+    affiliation: "Universitas Sulawesi Barat"
+repository-code: "https://github.com/wawanfirgiawanai/aid-path-finder-optimization"
+license: MIT
+keywords:
+  - disaster relief distribution
+  - risk-aware routing
+  - hybrid A*-genetic algorithm
+  - multi-depot vehicle routing
+  - humanitarian logistics
+  - OpenStreetMap
+date-released: "2026-10-06"
+preferred-citation:
+  type: conference-paper
+  title: "Risk-Aware Disaster Relief Routing: Comparing Exact, Metaheuristic, and Two-Level Hybrid A*-GA Methods"
+  authors:
+    - family-names: Firgiawan
+      given-names: Wawan
+    - family-names: Amaliah
+      given-names: Bilqis
+    - family-names: Saikhu
+      given-names: Ahmad
+    - family-names: Basori
+      given-names: Ahmad Hoirul
+    - family-names: Sulfayanti
+    - family-names: Nur
+      given-names: Nahya
+  collection-title: "2026 10th International Conference on Information Technology, Information Systems and Electrical Engineering (ICITISEE)"
+  conference:
+    name: "ICITISEE 2026"
+    city: "Yogyakarta"
+    country: ID
+  publisher:
+    name: IEEE
+  year: 2026
+  notes: "Accepted; to appear in IEEE Xplore. Add the DOI once published."
