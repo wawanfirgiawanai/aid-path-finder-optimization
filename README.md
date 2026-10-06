@@ -8,9 +8,9 @@
 
 This repository contains the web system, source code, frozen dataset, and experiment pipeline of the paper:
 
-> W. Firgiawan, B. Amaliah, A. Saikhu, A. H. Basori, Sulfayanti, and N. Nur, "Risk-Aware Disaster Relief Routing:
-> Comparing Exact, Metaheuristic, and Two-Level Hybrid A\*–GA Methods," *2026 10th International Conference on
-> Information Technology, Information Systems and Electrical Engineering (ICITISEE)*, IEEE, 2026.
+> W. Firgiawan, B. Amaliah, A. Saikhu, A. H. Basori, Sulfayanti, and N. Nur, "A Two-Level A\*–GA Framework for
+> Risk-Aware Routing in Disaster Relief Distribution," *2026 10th International Conference on Information
+> Technology, Information Systems and Electrical Engineering (ICITISEE)*, IEEE, 2026.
 
 OptiRoute compares **A\***, **Breadth-First Search (BFS)**, a **Genetic Algorithm (GA)**, and **Ant Colony
 Optimization (ACO)** under a risk-aware cost, and proposes a **two-level hybrid A\*–GA**. All methods are evaluated
@@ -458,8 +458,8 @@ If you use this software, dataset, or results, please cite the paper:
 @inproceedings{firgiawan2026riskaware,
   author    = {Firgiawan, Wawan and Amaliah, Bilqis and Saikhu, Ahmad and
                Basori, Ahmad Hoirul and Sulfayanti and Nur, Nahya},
-  title     = {Risk-Aware Disaster Relief Routing: Comparing Exact, Metaheuristic,
-               and Two-Level Hybrid {A*}--{GA} Methods},
+  title     = {A Two-Level {A*}--{GA} Framework for Risk-Aware Routing in Disaster
+               Relief Distribution},
   booktitle = {2026 10th International Conference on Information Technology,
                Information Systems and Electrical Engineering (ICITISEE)},
   address   = {Yogyakarta, Indonesia},
@@ -471,9 +471,9 @@ If you use this software, dataset, or results, please cite the paper:
 
 IEEE style:
 
-> W. Firgiawan, B. Amaliah, A. Saikhu, A. H. Basori, Sulfayanti, and N. Nur, "Risk-aware disaster relief routing:
-> Comparing exact, metaheuristic, and two-level hybrid A\*–GA methods," in *Proc. 10th Int. Conf. Information
-> Technology, Information Systems and Electrical Engineering (ICITISEE)*, Yogyakarta, Indonesia, 2026.
+> W. Firgiawan, B. Amaliah, A. Saikhu, A. H. Basori, Sulfayanti, and N. Nur, "A two-level A\*–GA framework for
+> risk-aware routing in disaster relief distribution," in *Proc. 10th Int. Conf. Information Technology,
+> Information Systems and Electrical Engineering (ICITISEE)*, Yogyakarta, Indonesia, 2026.
 
 To cite the software itself, use the **"Cite this repository"** button on GitHub, which reads
 [`CITATION.cff`](CITATION.cff). The DOI will be added once the paper is published in IEEE Xplore.

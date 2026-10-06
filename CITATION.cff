@@ -33,7 +33,7 @@ keywords:
 date-released: "2026-10-06"
 preferred-citation:
   type: conference-paper
-  title: "Risk-Aware Disaster Relief Routing: Comparing Exact, Metaheuristic, and Two-Level Hybrid A*-GA Methods"
+  title: "A Two-Level A*-GA Framework for Risk-Aware Routing in Disaster Relief Distribution"
   authors:
     - family-names: Firgiawan
       given-names: Wawan
